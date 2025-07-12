@@ -695,3 +695,293 @@ INFO 2025-07-13 00:53:00,266 views 9140 11392 Directory listed for user ayush: C
 INFO 2025-07-13 00:53:00,268 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 451
 INFO 2025-07-13 00:54:25,708 autoreload 9140 18772 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\views.py changed, reloading.
 INFO 2025-07-13 00:54:28,972 autoreload 23316 16664 Watching for file changes with StatReloader
+INFO 2025-07-13 00:57:33,624 serializers 23316 19292 User ayush logged in successfully
+INFO 2025-07-13 00:57:33,625 views 23316 19292 Login successful for user: ayush
+INFO 2025-07-13 00:57:33,628 basehttp 23316 19292 "POST /api/auth/login/ HTTP/1.1" 200 702
+INFO 2025-07-13 00:57:33,850 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:57:33,853 basehttp 23316 19292 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:57:33,870 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:57:33,870 basehttp 23316 19292 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:57:33,895 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:57:33,899 basehttp 23316 19292 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:57:33,916 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:57:33,919 basehttp 23316 19292 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:57:39,542 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:57:39,545 basehttp 23316 19292 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:57:40,633 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:57:40,641 basehttp 23316 19292 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:57:42,443 views 23316 19292 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:57:42,444 basehttp 23316 19292 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 01:08:08,906 autoreload 23316 16664 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 01:08:16,369 autoreload 15236 3900 Watching for file changes with StatReloader
+INFO 2025-07-13 01:08:24,189 autoreload 15236 3900 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 01:08:31,873 autoreload 1112 15768 Watching for file changes with StatReloader
+INFO 2025-07-13 01:08:44,779 autoreload 1112 15768 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 01:08:49,020 autoreload 8000 16252 Watching for file changes with StatReloader
+INFO 2025-07-13 01:10:22,819 autoreload 8000 16252 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\urls.py changed, reloading.
+INFO 2025-07-13 01:10:30,172 autoreload 22548 11528 Watching for file changes with StatReloader
+DEBUG 2025-07-13 01:17:00,634 middleware 22548 8336 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:00,636 middleware 22548 8336 MCP Middleware: Request path: /admin/
+DEBUG 2025-07-13 01:17:00,636 middleware 22548 8336 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:17:00,762 basehttp 22548 8336 "GET /admin/ HTTP/1.1" 302 0
+DEBUG 2025-07-13 01:17:00,773 middleware 22548 8336 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:00,775 middleware 22548 8336 MCP Middleware: Request path: /admin/login/
+DEBUG 2025-07-13 01:17:00,783 middleware 22548 8336 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:17:01,553 basehttp 22548 8336 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+DEBUG 2025-07-13 01:17:01,605 middleware 22548 17536 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:01,606 middleware 22548 17536 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:17:01,609 middleware 22548 17536 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:17:01,611 middleware 22548 17536 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:17:01,613 middleware 22548 17536 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:17:01,614 views 22548 17536 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:17:01,616 views 22548 17536 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:17:01,617 views 22548 17536 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:17:01,618 utils 22548 17536 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:17:01,618 utils 22548 17536 Code length: 135 characters
+DEBUG 2025-07-13 01:17:01,621 utils 22548 17536 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpn0elj1oz.py
+DEBUG 2025-07-13 01:17:01,621 utils 22548 17536 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpn0elj1oz.py
+DEBUG 2025-07-13 01:17:01,621 utils 22548 17536 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:17:04,755 utils 22548 17536 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:17:05,542 utils 22548 17536 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpn0elj1oz.py
+INFO 2025-07-13 01:17:05,547 basehttp 22548 17536 "POST /mcp_api/run_python_code HTTP/1.1" 200 289
+DEBUG 2025-07-13 01:17:05,580 middleware 22548 13004 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,580 middleware 22548 13004 MCP Middleware: Request path: /mcp_api/list_dir
+DEBUG 2025-07-13 01:17:05,581 middleware 22548 13004 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:17:05,582 middleware 22548 13004 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/list_dir
+DEBUG 2025-07-13 01:17:05,584 middleware 22548 13004 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:17:05,584 views 22548 13004 MCP API: list_dir request received from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,586 views 22548 13004 MCP API: list_dir payload keys: ['user_dir', 'dir_name']
+INFO 2025-07-13 01:17:05,587 views 22548 13004 MCP API: Listing directory for user_dir: test_user, dir_name: 
+DEBUG 2025-07-13 01:17:05,588 utils 22548 13004 Listing directory for user_dir: test_user, target_dir: 
+INFO 2025-07-13 01:17:05,592 utils 22548 13004 Successfully listed directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user (1 items)
+INFO 2025-07-13 01:17:05,594 basehttp 22548 13004 "POST /mcp_api/list_dir HTTP/1.1" 200 149
+DEBUG 2025-07-13 01:17:05,736 middleware 22548 7504 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,739 middleware 22548 7504 MCP Middleware: Request path: /mcp_api/list_dir_recursively
+DEBUG 2025-07-13 01:17:05,739 middleware 22548 7504 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:17:05,741 middleware 22548 7504 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/list_dir_recursively
+DEBUG 2025-07-13 01:17:05,742 middleware 22548 7504 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:17:05,743 views 22548 7504 MCP API: list_dir_recursively request received from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,746 views 22548 7504 MCP API: list_dir_recursively payload keys: ['user_dir', 'dir_name']
+INFO 2025-07-13 01:17:05,747 views 22548 7504 MCP API: Listing directory recursively for user_dir: test_user, dir_name: 
+DEBUG 2025-07-13 01:17:05,748 utils 22548 7504 Listing directory recursively for user_dir: test_user, target_dir: 
+INFO 2025-07-13 01:17:05,755 utils 22548 7504 Successfully listed directory recursively: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user (1 items)
+INFO 2025-07-13 01:17:05,760 basehttp 22548 7504 "POST /mcp_api/list_dir_recursively HTTP/1.1" 200 161
+DEBUG 2025-07-13 01:17:05,795 middleware 22548 18640 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,796 middleware 22548 18640 MCP Middleware: Request path: /mcp_api/list_dir
+DEBUG 2025-07-13 01:17:05,797 middleware 22548 18640 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:17:05,799 middleware 22548 18640 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/list_dir
+DEBUG 2025-07-13 01:17:05,800 middleware 22548 18640 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:17:05,802 views 22548 18640 MCP API: list_dir request received from 127.0.0.1
+DEBUG 2025-07-13 01:17:05,804 views 22548 18640 MCP API: list_dir payload keys: ['user_dir', 'dir_name']
+INFO 2025-07-13 01:17:05,805 views 22548 18640 MCP API: Listing directory for user_dir: test_user, dir_name: 
+DEBUG 2025-07-13 01:17:05,806 utils 22548 18640 Listing directory for user_dir: test_user, target_dir: 
+INFO 2025-07-13 01:17:05,812 utils 22548 18640 Successfully listed directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user (1 items)
+INFO 2025-07-13 01:17:05,816 basehttp 22548 18640 "POST /mcp_api/list_dir HTTP/1.1" 200 149
+INFO 2025-07-13 01:17:53,428 autoreload 7628 9800 Watching for file changes with StatReloader
+DEBUG 2025-07-13 01:20:29,084 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:29,099 middleware 22548 13280 MCP Middleware: Request path: /api/auth/user-info/
+DEBUG 2025-07-13 01:20:29,116 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+DEBUG 2025-07-13 01:20:29,502 views 22548 13280 User info retrieved for: ayush
+INFO 2025-07-13 01:20:29,512 basehttp 22548 13280 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 01:20:29,525 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:29,525 middleware 22548 13280 MCP Middleware: Request path: /api/auth/user-info/
+DEBUG 2025-07-13 01:20:29,525 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+DEBUG 2025-07-13 01:20:29,575 views 22548 13280 User info retrieved for: ayush
+INFO 2025-07-13 01:20:29,602 basehttp 22548 13280 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 01:20:29,943 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:29,945 middleware 22548 13280 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 01:20:29,949 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:20:30,014 views 22548 13280 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 01:20:30,028 basehttp 22548 13280 "GET /api/files/list/?path= HTTP/1.1" 200 451
+DEBUG 2025-07-13 01:20:30,046 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:30,054 middleware 22548 13280 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 01:20:30,060 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:20:30,160 views 22548 13280 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 01:20:30,168 basehttp 22548 13280 "GET /api/files/list/?path= HTTP/1.1" 200 451
+DEBUG 2025-07-13 01:20:30,177 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:30,180 middleware 22548 13280 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 01:20:30,184 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:20:30,223 views 22548 13280 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 01:20:30,232 basehttp 22548 13280 "GET /api/files/list/?path= HTTP/1.1" 200 451
+DEBUG 2025-07-13 01:20:30,242 middleware 22548 13280 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:20:30,242 middleware 22548 13280 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 01:20:30,242 middleware 22548 13280 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 01:20:30,301 views 22548 13280 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 01:20:30,312 basehttp 22548 13280 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 01:25:18,266 basehttp 22548 11704 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:25:18,266 middleware 22548 11704 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:25:18,266 middleware 22548 11704 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:25:18,266 middleware 22548 11704 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:25:18,266 middleware 22548 11704 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:25:18,266 middleware 22548 11704 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:25:18,271 views 22548 11704 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:25:18,271 views 22548 11704 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:25:18,272 views 22548 11704 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:25:18,273 utils 22548 11704 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:25:18,273 utils 22548 11704 Code length: 129 characters
+DEBUG 2025-07-13 01:25:18,276 utils 22548 11704 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpl1lobj0d.py
+DEBUG 2025-07-13 01:25:18,276 utils 22548 11704 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpl1lobj0d.py
+DEBUG 2025-07-13 01:25:18,277 utils 22548 11704 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:25:18,404 utils 22548 11704 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:25:18,413 utils 22548 11704 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpl1lobj0d.py
+INFO 2025-07-13 01:25:18,414 basehttp 22548 11704 "POST /mcp_api/run_python_code HTTP/1.1" 200 264
+INFO 2025-07-13 01:32:11,148 basehttp 22548 22944 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:32:11,161 middleware 22548 22944 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:32:11,163 middleware 22548 22944 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:11,173 middleware 22548 22944 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:32:11,177 middleware 22548 22944 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:11,177 middleware 22548 22944 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:32:11,181 views 22548 22944 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:32:11,185 views 22548 22944 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:32:11,185 views 22548 22944 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:11,189 utils 22548 22944 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:11,191 utils 22548 22944 Code length: 129 characters
+DEBUG 2025-07-13 01:32:11,202 utils 22548 22944 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp_dpnlfk_.py
+DEBUG 2025-07-13 01:32:11,206 utils 22548 22944 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp_dpnlfk_.py
+DEBUG 2025-07-13 01:32:11,211 utils 22548 22944 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:32:12,800 utils 22548 22944 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:32:12,826 utils 22548 22944 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp_dpnlfk_.py
+INFO 2025-07-13 01:32:12,843 basehttp 22548 22944 "POST /mcp_api/run_python_code HTTP/1.1" 200 264
+INFO 2025-07-13 01:32:23,818 basehttp 22548 22944 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:32:23,891 middleware 22548 22944 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:32:23,912 middleware 22548 22944 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:23,937 middleware 22548 22944 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:32:23,948 middleware 22548 22944 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:23,959 middleware 22548 22944 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:32:23,970 views 22548 22944 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:32:23,992 views 22548 22944 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:32:24,004 views 22548 22944 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:24,013 utils 22548 22944 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:24,038 utils 22548 22944 Code length: 128 characters
+DEBUG 2025-07-13 01:32:24,107 utils 22548 22944 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpm7nn7nvl.py
+DEBUG 2025-07-13 01:32:24,124 utils 22548 22944 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpm7nn7nvl.py
+DEBUG 2025-07-13 01:32:24,133 utils 22548 22944 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:32:24,448 utils 22548 22944 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:32:24,458 utils 22548 22944 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpm7nn7nvl.py
+INFO 2025-07-13 01:32:24,469 basehttp 22548 22944 "POST /mcp_api/run_python_code HTTP/1.1" 200 263
+INFO 2025-07-13 01:32:31,785 basehttp 22548 22944 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:32:31,854 middleware 22548 22944 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:32:31,864 middleware 22548 22944 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:31,875 middleware 22548 22944 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:32:31,888 middleware 22548 22944 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:31,896 middleware 22548 22944 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:32:31,906 views 22548 22944 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:32:31,938 views 22548 22944 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:32:31,981 views 22548 22944 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:32,013 utils 22548 22944 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:32,068 utils 22548 22944 Code length: 13 characters
+DEBUG 2025-07-13 01:32:32,211 utils 22548 22944 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpsiecvylq.py
+DEBUG 2025-07-13 01:32:32,239 utils 22548 22944 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpsiecvylq.py
+DEBUG 2025-07-13 01:32:32,288 utils 22548 22944 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:32:32,649 utils 22548 22944 Script execution completed with return code: 1
+DEBUG 2025-07-13 01:32:32,659 utils 22548 22944 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpsiecvylq.py
+INFO 2025-07-13 01:32:32,668 basehttp 22548 22944 "POST /mcp_api/run_python_code HTTP/1.1" 200 317
+INFO 2025-07-13 01:32:47,828 basehttp 22548 22944 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:32:47,863 middleware 22548 22944 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:32:47,871 middleware 22548 22944 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:47,884 middleware 22548 22944 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:32:47,895 middleware 22548 22944 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:32:47,898 middleware 22548 22944 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:32:47,906 views 22548 22944 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:32:47,912 views 22548 22944 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:32:47,916 views 22548 22944 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:47,921 utils 22548 22944 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:32:47,926 utils 22548 22944 Code length: 28 characters
+DEBUG 2025-07-13 01:32:47,951 utils 22548 22944 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp5a81bvgi.py
+DEBUG 2025-07-13 01:32:47,955 utils 22548 22944 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp5a81bvgi.py
+DEBUG 2025-07-13 01:32:47,960 utils 22548 22944 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:32:48,358 utils 22548 22944 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:32:48,365 utils 22548 22944 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp5a81bvgi.py
+INFO 2025-07-13 01:32:48,369 basehttp 22548 22944 "POST /mcp_api/run_python_code HTTP/1.1" 200 166
+INFO 2025-07-13 01:39:17,014 basehttp 22548 7404 "OPTIONS /mcp_api/list_dir HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:39:17,014 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:39:17,014 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/list_dir
+DEBUG 2025-07-13 01:39:17,020 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:39:17,020 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/list_dir
+DEBUG 2025-07-13 01:39:17,020 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:39:17,020 views 22548 7404 MCP API: list_dir request received from 127.0.0.1
+DEBUG 2025-07-13 01:39:17,020 views 22548 7404 MCP API: list_dir payload keys: ['user_dir', 'dir_name']
+INFO 2025-07-13 01:39:17,020 views 22548 7404 MCP API: Listing directory for user_dir: test_user, dir_name: 
+DEBUG 2025-07-13 01:39:17,020 utils 22548 7404 Listing directory for user_dir: test_user, target_dir: 
+INFO 2025-07-13 01:39:17,027 utils 22548 7404 Successfully listed directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user (1 items)
+INFO 2025-07-13 01:39:17,029 basehttp 22548 7404 "POST /mcp_api/list_dir HTTP/1.1" 200 149
+INFO 2025-07-13 01:39:25,903 basehttp 22548 7404 "OPTIONS /mcp_api/list_dir_recursively HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:39:25,908 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:39:25,911 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/list_dir_recursively
+DEBUG 2025-07-13 01:39:25,913 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:39:25,913 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/list_dir_recursively
+DEBUG 2025-07-13 01:39:25,914 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:39:25,914 views 22548 7404 MCP API: list_dir_recursively request received from 127.0.0.1
+DEBUG 2025-07-13 01:39:25,917 views 22548 7404 MCP API: list_dir_recursively payload keys: ['user_dir', 'dir_name']
+INFO 2025-07-13 01:39:25,920 views 22548 7404 MCP API: Listing directory recursively for user_dir: test_user, dir_name: 
+DEBUG 2025-07-13 01:39:25,920 utils 22548 7404 Listing directory recursively for user_dir: test_user, target_dir: 
+INFO 2025-07-13 01:39:25,926 utils 22548 7404 Successfully listed directory recursively: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user (1 items)
+INFO 2025-07-13 01:39:25,928 basehttp 22548 7404 "POST /mcp_api/list_dir_recursively HTTP/1.1" 200 161
+INFO 2025-07-13 01:40:29,678 basehttp 22548 7404 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:40:29,681 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:40:29,681 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:40:29,681 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:40:29,683 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:40:29,683 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:40:29,683 views 22548 7404 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:40:29,685 views 22548 7404 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:40:29,686 views 22548 7404 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:40:29,686 utils 22548 7404 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:40:29,686 utils 22548 7404 Code length: 25 characters
+DEBUG 2025-07-13 01:40:29,691 utils 22548 7404 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpqz439k6h.py
+DEBUG 2025-07-13 01:40:29,691 utils 22548 7404 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpqz439k6h.py
+DEBUG 2025-07-13 01:40:29,693 utils 22548 7404 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:40:29,812 utils 22548 7404 Script execution completed with return code: 1
+DEBUG 2025-07-13 01:40:29,820 utils 22548 7404 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpqz439k6h.py
+INFO 2025-07-13 01:40:29,825 basehttp 22548 7404 "POST /mcp_api/run_python_code HTTP/1.1" 200 342
+INFO 2025-07-13 01:40:39,475 basehttp 22548 7404 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:40:39,478 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:40:39,478 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:40:39,478 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:40:39,481 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:40:39,482 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:40:39,482 views 22548 7404 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:40:39,482 views 22548 7404 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:40:39,482 views 22548 7404 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:40:39,487 utils 22548 7404 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:40:39,487 utils 22548 7404 Code length: 14 characters
+DEBUG 2025-07-13 01:40:39,492 utils 22548 7404 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpp6l5g12o.py
+DEBUG 2025-07-13 01:40:39,496 utils 22548 7404 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpp6l5g12o.py
+DEBUG 2025-07-13 01:40:39,497 utils 22548 7404 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:40:39,670 utils 22548 7404 Script execution completed with return code: 1
+DEBUG 2025-07-13 01:40:39,670 utils 22548 7404 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmpp6l5g12o.py
+INFO 2025-07-13 01:40:39,679 basehttp 22548 7404 "POST /mcp_api/run_python_code HTTP/1.1" 200 270
+INFO 2025-07-13 01:41:26,104 basehttp 22548 7404 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:41:26,107 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:41:26,109 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:41:26,109 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:41:26,112 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:41:26,112 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:41:26,112 views 22548 7404 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:41:26,112 views 22548 7404 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:41:26,112 views 22548 7404 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:41:26,116 utils 22548 7404 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:41:26,116 utils 22548 7404 Code length: 27 characters
+DEBUG 2025-07-13 01:41:26,122 utils 22548 7404 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmphmifz6q0.py
+DEBUG 2025-07-13 01:41:26,122 utils 22548 7404 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmphmifz6q0.py
+DEBUG 2025-07-13 01:41:26,123 utils 22548 7404 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:41:26,289 utils 22548 7404 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:41:26,298 utils 22548 7404 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmphmifz6q0.py
+INFO 2025-07-13 01:41:26,298 basehttp 22548 7404 "POST /mcp_api/run_python_code HTTP/1.1" 200 69
+INFO 2025-07-13 01:41:31,862 basehttp 22548 7404 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 01:41:31,865 middleware 22548 7404 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 01:41:31,865 middleware 22548 7404 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:41:31,865 middleware 22548 7404 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 01:41:31,868 middleware 22548 7404 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 01:41:31,868 middleware 22548 7404 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 01:41:31,870 views 22548 7404 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 01:41:31,872 views 22548 7404 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 01:41:31,873 views 22548 7404 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:41:31,873 utils 22548 7404 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 01:41:31,873 utils 22548 7404 Code length: 34 characters
+DEBUG 2025-07-13 01:41:31,880 utils 22548 7404 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp7c6rirrc.py
+DEBUG 2025-07-13 01:41:31,881 utils 22548 7404 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp7c6rirrc.py
+DEBUG 2025-07-13 01:41:31,881 utils 22548 7404 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 01:41:32,033 utils 22548 7404 Script execution completed with return code: 0
+DEBUG 2025-07-13 01:41:32,039 utils 22548 7404 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp7c6rirrc.py
+INFO 2025-07-13 01:41:32,041 basehttp 22548 7404 "POST /mcp_api/run_python_code HTTP/1.1" 200 166

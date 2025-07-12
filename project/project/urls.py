@@ -26,6 +26,7 @@ urlpatterns = [
     # API URLs
     path("api/auth/", include("auth_app.urls")),
     path("api/files/", include("file_manager_core.urls")),
+    path("mcp_api/", include("mcp_api.urls")),
 ]
 
 # Serve static files in development

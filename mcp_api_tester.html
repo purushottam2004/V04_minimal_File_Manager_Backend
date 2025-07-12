@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP API Tester</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            color: #6c757d;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .tab.active {
+            background: white;
+            color: #007bff;
+            border-bottom-color: #007bff;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: 'Courier New', monospace;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 5px 15px rgba(108,117,125,0.3);
+        }
+
+        .response {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .terminal-output {
+            background: #1e1e1e;
+            color: #f8f8f2;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .terminal-output .line {
+            margin: 0;
+            padding: 0;
+        }
+
+        .terminal-output .error {
+            color: #ff6b6b;
+        }
+
+        .terminal-output .success {
+            color: #51cf66;
+        }
+
+        .terminal-output .warning {
+            color: #ffd43b;
+        }
+
+        .terminal-output .info {
+            color: #74c0fc;
+        }
+
+        .terminal-output .bold {
+            font-weight: bold;
+        }
+
+        .terminal-output .dim {
+            opacity: 0.7;
+        }
+
+        .terminal-output .underline {
+            text-decoration: underline;
+        }
+
+        .terminal-output .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .response.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .response.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .response.info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .status.success {
+            background: #28a745;
+            color: white;
+        }
+
+        .status.error {
+            background: #dc3545;
+            color: white;
+        }
+
+        .status.info {
+            background: #17a2b8;
+            color: white;
+        }
+
+        .config {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .config h3 {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+
+        .config-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .config-row .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007bff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .example-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .example-btn:hover {
+            background: #218838;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .config-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MCP API Tester</h1>
+            <p>Test Model Context Protocol API endpoints manually</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('run-code')">Run Python Code</button>
+            <button class="tab" onclick="showTab('list-dir')">List Directory</button>
+            <button class="tab" onclick="showTab('list-recursive')">List Recursive</button>
+        </div>
+
+        <!-- Configuration Section -->
+        <div class="config">
+            <h3>Configuration</h3>
+            <div class="config-row">
+                <div class="form-group">
+                    <label for="baseUrl">Base URL:</label>
+                    <input type="text" id="baseUrl" value="http://127.0.0.1:8000" placeholder="http://127.0.0.1:8000">
+                </div>
+                <div class="form-group">
+                    <label for="userDir">User Directory:</label>
+                    <input type="text" id="userDir" value="test_user" placeholder="test_user">
+                </div>
+            </div>
+        </div>
+
+        <!-- Run Python Code Tab -->
+        <div id="run-code" class="tab-content active">
+            <h3>Execute Python Code</h3>
+            <div class="form-group">
+                <label for="pythonCode">Python Code:</label>
+                <textarea id="pythonCode" placeholder="Enter Python code to execute...">print("Hello from MCP API!")
+import os
+print(f"Current directory: {os.getcwd()}")
+print(f"Files in directory: {os.listdir('.')}")</textarea>
+                <button class="example-btn" onclick="loadExample('python')">Load Example</button>
+            </div>
+            <button class="btn" onclick="runPythonCode()">Execute Code</button>
+            <button class="btn btn-secondary" onclick="clearResponse('run-code')">Clear Response</button>
+            <div class="loading" id="loading-run-code">
+                <div class="spinner"></div>
+                <p>Executing Python code...</p>
+            </div>
+            <div id="response-run-code" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- List Directory Tab -->
+        <div id="list-dir" class="tab-content">
+            <h3>List Directory Contents</h3>
+            <div class="form-group">
+                <label for="dirName">Directory Name (optional):</label>
+                <input type="text" id="dirName" placeholder="Leave empty for root directory">
+            </div>
+            <button class="btn" onclick="listDirectory()">List Directory</button>
+            <button class="btn btn-secondary" onclick="clearResponse('list-dir')">Clear Response</button>
+            <div class="loading" id="loading-list-dir">
+                <div class="spinner"></div>
+                <p>Listing directory...</p>
+            </div>
+            <div id="response-list-dir" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- List Recursive Tab -->
+        <div id="list-recursive" class="tab-content">
+            <h3>List Directory Contents Recursively</h3>
+            <div class="form-group">
+                <label for="recursiveDirName">Directory Name (optional):</label>
+                <input type="text" id="recursiveDirName" placeholder="Leave empty for root directory">
+            </div>
+            <button class="btn" onclick="listDirectoryRecursively()">List Recursively</button>
+            <button class="btn btn-secondary" onclick="clearResponse('list-recursive')">Clear Response</button>
+            <div class="loading" id="loading-list-recursive">
+                <div class="spinner"></div>
+                <p>Listing directory recursively...</p>
+            </div>
+            <div id="response-list-recursive" class="response" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Configuration
+        function getBaseUrl() {
+            return document.getElementById('baseUrl').value.trim();
+        }
+
+        function getUserDir() {
+            return document.getElementById('userDir').value.trim();
+        }
+
+        // Utility functions
+        function showLoading(tabId) {
+            document.getElementById(`loading-${tabId}`).style.display = 'block';
+            document.getElementById(`response-${tabId}`).style.display = 'none';
+        }
+
+        function hideLoading(tabId) {
+            document.getElementById(`loading-${tabId}`).style.display = 'none';
+        }
+
+        function showResponse(tabId, data, isSuccess = true) {
+            const responseDiv = document.getElementById(`response-${tabId}`);
+            const statusClass = isSuccess ? 'success' : 'error';
+            const statusText = isSuccess ? 'SUCCESS' : 'ERROR';
+            
+            responseDiv.className = `response ${statusClass}`;
+            
+            // Special handling for Python code execution - show terminal output
+            if (tabId === 'run-code' && isSuccess && data.output !== undefined) {
+                let content = `<div class="status ${statusClass}">${statusText}</div>`;
+                
+                // Show terminal output if available
+                if (data.output || data.error_output) {
+                    content += formatTerminalOutput(data.output, data.error_output);
+                }
+                
+                // Show additional info in JSON format
+                const infoData = { ...data };
+                delete infoData.output;
+                delete infoData.error_output;
+                if (Object.keys(infoData).length > 0) {
+                    content += `<div class="response ${statusClass}">`;
+                    content += `<div class="status info">ADDITIONAL INFO</div>`;
+                    content += `<pre>${JSON.stringify(infoData, null, 2)}</pre>`;
+                    content += `</div>`;
+                }
+                
+                responseDiv.innerHTML = content;
+            } else {
+                // Regular JSON response for other endpoints
+                responseDiv.innerHTML = `<div class="status ${statusClass}">${statusText}</div><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            }
+            
+            responseDiv.style.display = 'block';
+        }
+
+        function clearResponse(tabId) {
+            document.getElementById(`response-${tabId}`).style.display = 'none';
+        }
+
+        // API Functions
+        async function runPythonCode() {
+            const baseUrl = getBaseUrl();
+            const userDir = getUserDir();
+            const pythonCode = document.getElementById('pythonCode').value;
+
+            if (!userDir) {
+                showResponse('run-code', { error: 'User directory is required' }, false);
+                return;
+            }
+
+            if (!pythonCode.trim()) {
+                showResponse('run-code', { error: 'Python code is required' }, false);
+                return;
+            }
+
+            showLoading('run-code');
+
+            try {
+                const response = await fetch(`${baseUrl}/mcp_api/run_python_code`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        user_dir: userDir,
+                        python_code: pythonCode
+                    })
+                });
+
+                const data = await response.json();
+                hideLoading('run-code');
+                showResponse('run-code', data, response.ok);
+            } catch (error) {
+                hideLoading('run-code');
+                showResponse('run-code', { error: `Network error: ${error.message}` }, false);
+            }
+        }
+
+        async function listDirectory() {
+            const baseUrl = getBaseUrl();
+            const userDir = getUserDir();
+            const dirName = document.getElementById('dirName').value.trim();
+
+            if (!userDir) {
+                showResponse('list-dir', { error: 'User directory is required' }, false);
+                return;
+            }
+
+            showLoading('list-dir');
+
+            try {
+                const response = await fetch(`${baseUrl}/mcp_api/list_dir`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        user_dir: userDir,
+                        dir_name: dirName
+                    })
+                });
+
+                const data = await response.json();
+                hideLoading('list-dir');
+                showResponse('list-dir', data, response.ok);
+            } catch (error) {
+                hideLoading('list-dir');
+                showResponse('list-dir', { error: `Network error: ${error.message}` }, false);
+            }
+        }
+
+        async function listDirectoryRecursively() {
+            const baseUrl = getBaseUrl();
+            const userDir = getUserDir();
+            const dirName = document.getElementById('recursiveDirName').value.trim();
+
+            if (!userDir) {
+                showResponse('list-recursive', { error: 'User directory is required' }, false);
+                return;
+            }
+
+            showLoading('list-recursive');
+
+            try {
+                const response = await fetch(`${baseUrl}/mcp_api/list_dir_recursively`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        user_dir: userDir,
+                        dir_name: dirName
+                    })
+                });
+
+                const data = await response.json();
+                hideLoading('list-recursive');
+                showResponse('list-recursive', data, response.ok);
+            } catch (error) {
+                hideLoading('list-recursive');
+                showResponse('list-recursive', { error: `Network error: ${error.message}` }, false);
+            }
+        }
+
+        // Example loading
+        function loadExample(type) {
+            if (type === 'python') {
+                const examples = [
+                    `# Basic example
+print("Hello from MCP API!")
+print("Current time:", __import__('datetime').datetime.now())`,
+
+                    `# File system example
+import os
+print("Current directory:", os.getcwd())
+print("Files in directory:", os.listdir('.'))
+print("Directory contents:")
+for item in os.listdir('.'):
+    if os.path.isfile(item):
+        print(f"  File: {item} ({os.path.getsize(item)} bytes)")
+    else:
+        print(f"  Dir:  {item}")`,
+
+                    `# System information
+import sys
+import platform
+print("Python version:", sys.version)
+print("Platform:", platform.platform())
+print("Architecture:", platform.architecture())
+print("Machine:", platform.machine())`,
+
+                    `# ANSI color example
+import sys
+print("\\033[32m✓ Success message in green\\033[0m")
+print("\\033[31m✗ Error message in red\\033[0m")
+print("\\033[33m⚠ Warning message in yellow\\033[0m")
+print("\\033[34mℹ Info message in blue\\033[0m")
+print("\\033[1mBold text\\033[0m")
+print("\\033[2mDim text\\033[0m")
+print("\\033[4mUnderlined text\\033[0m")
+print("\\033[5mBlinking text\\033[0m")`,
+
+                    `# Create a test file
+with open('test_output.txt', 'w') as f:
+    f.write("This file was created by MCP API\\n")
+    f.write("Timestamp: " + str(__import__('datetime').datetime.now()) + "\\n")
+print("Created test_output.txt")`,
+
+                    `# Advanced ANSI example
+import os
+print("\\033[1;32m=== System Information ===\\033[0m")
+print("\\033[36mCurrent Directory:\\033[0m", os.getcwd())
+print("\\033[33mFiles in directory:\\033[0m")
+for item in os.listdir('.'):
+    if os.path.isfile(item):
+        size = os.path.getsize(item)
+        print(f"  \\033[32m📄 {item}\\033[0m ({size} bytes)")
+    else:
+        print(f"  \\033[34m📁 {item}\\033[0m")
+print("\\033[1;35m=== End of Report ===\\033[0m")`
+                ];
+                
+                const randomExample = examples[Math.floor(Math.random() * examples.length)];
+                document.getElementById('pythonCode').value = randomExample;
+            }
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(event) {
+            // Ctrl+Enter to execute code
+            if (event.ctrlKey && event.key === 'Enter') {
+                const activeTab = document.querySelector('.tab-content.active');
+                if (activeTab.id === 'run-code') {
+                    runPythonCode();
+                } else if (activeTab.id === 'list-dir') {
+                    listDirectory();
+                } else if (activeTab.id === 'list-recursive') {
+                    listDirectoryRecursively();
+                }
+            }
+        });
+
+        // ANSI escape sequence parser for terminal output
+        function parseAnsiEscapeCodes(text) {
+            if (!text) return '';
+            
+            // ANSI escape sequence regex
+            const ansiRegex = /\x1b\[([0-9;]*)([a-zA-Z])/g;
+            let result = '';
+            let lastIndex = 0;
+            let match;
+            
+            while ((match = ansiRegex.exec(text)) !== null) {
+                // Add text before the escape sequence
+                result += text.substring(lastIndex, match.index);
+                lastIndex = match.index + match[0].length;
+                
+                const codes = match[1].split(';').map(Number);
+                const command = match[2];
+                
+                // Handle different ANSI commands
+                switch (command) {
+                    case 'm': // Set graphics mode
+                        for (let code of codes) {
+                            switch (code) {
+                                case 0: // Reset
+                                    result += '</span>';
+                                    break;
+                                case 1: // Bold
+                                    result += '<span class="bold">';
+                                    break;
+                                case 2: // Dim
+                                    result += '<span class="dim">';
+                                    break;
+                                case 4: // Underline
+                                    result += '<span class="underline">';
+                                    break;
+                                case 5: // Blink
+                                    result += '<span class="blink">';
+                                    break;
+                                case 30: // Black
+                                case 31: // Red
+                                    result += '<span class="error">';
+                                    break;
+                                case 32: // Green
+                                    result += '<span class="success">';
+                                    break;
+                                case 33: // Yellow
+                                    result += '<span class="warning">';
+                                    break;
+                                case 34: // Blue
+                                case 36: // Cyan
+                                    result += '<span class="info">';
+                                    break;
+                                case 35: // Magenta
+                                    result += '<span class="error">';
+                                    break;
+                                case 37: // White
+                                    result += '<span class="dim">';
+                                    break;
+                                case 90: // Bright Black
+                                case 91: // Bright Red
+                                    result += '<span class="error">';
+                                    break;
+                                case 92: // Bright Green
+                                    result += '<span class="success">';
+                                    break;
+                                case 93: // Bright Yellow
+                                    result += '<span class="warning">';
+                                    break;
+                                case 94: // Bright Blue
+                                case 96: // Bright Cyan
+                                    result += '<span class="info">';
+                                    break;
+                                case 95: // Bright Magenta
+                                    result += '<span class="error">';
+                                    break;
+                                case 97: // Bright White
+                                    result += '<span class="bold">';
+                                    break;
+                            }
+                        }
+                        break;
+                    case 'K': // Erase in line
+                        // Just ignore for now
+                        break;
+                    case 'H': // Move cursor to position
+                    case 'f': // Move cursor to position
+                        // Just ignore for now
+                        break;
+                    case 'J': // Erase in display
+                        // Just ignore for now
+                        break;
+                    case 'A': // Move cursor up
+                    case 'B': // Move cursor down
+                    case 'C': // Move cursor forward
+                    case 'D': // Move cursor back
+                        // Just ignore for now
+                        break;
+                    default:
+                        // Unknown command, just ignore
+                        break;
+                }
+            }
+            
+            // Add remaining text
+            result += text.substring(lastIndex);
+            
+            // Close any open spans
+            const openSpans = (result.match(/<span/g) || []).length;
+            const closeSpans = (result.match(/<\/span>/g) || []).length;
+            for (let i = 0; i < openSpans - closeSpans; i++) {
+                result += '</span>';
+            }
+            
+            return result;
+        }
+
+        // Format terminal output
+        function formatTerminalOutput(output, errorOutput) {
+            let formattedOutput = '';
+            
+            if (output) {
+                formattedOutput += '<div class="terminal-output">';
+                formattedOutput += '<div class="line">' + parseAnsiEscapeCodes(output) + '</div>';
+                formattedOutput += '</div>';
+            }
+            
+            if (errorOutput) {
+                formattedOutput += '<div class="terminal-output">';
+                formattedOutput += '<div class="line error">' + parseAnsiEscapeCodes(errorOutput) + '</div>';
+                formattedOutput += '</div>';
+            }
+            
+            return formattedOutput;
+        }
+
+        // Auto-save configuration to localStorage
+        function saveConfig() {
+            localStorage.setItem('mcpApiConfig', JSON.stringify({
+                baseUrl: getBaseUrl(),
+                userDir: getUserDir()
+            }));
+        }
+
+        function loadConfig() {
+            const config = localStorage.getItem('mcpApiConfig');
+            if (config) {
+                const { baseUrl, userDir } = JSON.parse(config);
+                document.getElementById('baseUrl').value = baseUrl || 'http://127.0.0.1:8000';
+                document.getElementById('userDir').value = userDir || 'test_user';
+            }
+        }
+
+        // Save config on change
+        document.getElementById('baseUrl').addEventListener('change', saveConfig);
+        document.getElementById('userDir').addEventListener('change', saveConfig);
+
+        // Load config on page load
+        document.addEventListener('DOMContentLoaded', loadConfig);
+    </script>
+</body>
+</html> 

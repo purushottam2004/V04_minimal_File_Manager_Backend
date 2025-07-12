@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # Local apps
     "auth_app",
     "file_manager_core",
+    "mcp_api",
     'corsheaders',
 ]
 
@@ -61,6 +62,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "mcp_api.middleware.MCPIPAuthenticationMiddleware",
 ]
 
 ROOT_URLCONF = "project.urls"
@@ -221,8 +223,17 @@ LOGGING = {
             'level': 'DEBUG' if DEBUG else 'INFO',
             'propagate': False,
         },
+        'mcp_api': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG' if DEBUG else 'INFO',
+            'propagate': False,
+        },
     },
 }
 
 # Create logs directory if it doesn't exist
 os.makedirs(BASE_DIR / 'logs', exist_ok=True)
+
+# MCP API Settings
+MCP_ALLOWED_IPS = config('MCP_ALLOWED_IPS', default='127.0.0.1', cast=lambda v: [s.strip() for s in v.split(',')])
+MCP_LOGGER = 'mcp_api'

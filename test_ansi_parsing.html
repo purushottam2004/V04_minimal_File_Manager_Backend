@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSI Parsing Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .terminal-output {
+            background: #1e1e1e;
+            color: #f8f8f2;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+
+        .terminal-output .error {
+            color: #ff6b6b;
+        }
+
+        .terminal-output .success {
+            color: #51cf66;
+        }
+
+        .terminal-output .warning {
+            color: #ffd43b;
+        }
+
+        .terminal-output .info {
+            color: #74c0fc;
+        }
+
+        .terminal-output .bold {
+            font-weight: bold;
+        }
+
+        .terminal-output .dim {
+            opacity: 0.7;
+        }
+
+        .terminal-output .underline {
+            text-decoration: underline;
+        }
+
+        .terminal-output .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .raw-text {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ANSI Escape Sequence Parsing Test</h1>
+        <p>This page tests the ANSI escape sequence parsing functionality used in the MCP API tester.</p>
+        
+        <div class="test-section">
+            <h2>Test 1: Basic Colors</h2>
+            <div class="raw-text">Raw: \033[31mRed text\033[0m \033[32mGreen text\033[0m \033[33mYellow text\033[0m \033[34mBlue text\033[0m</div>
+            <div class="terminal-output" id="test1"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 2: Text Formatting</h2>
+            <div class="raw-text">Raw: \033[1mBold\033[0m \033[2mDim\033[0m \033[4mUnderline\033[0m \033[5mBlink\033[0m</div>
+            <div class="terminal-output" id="test2"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 3: Combined Formatting</h2>
+            <div class="raw-text">Raw: \033[1;32mBold Green\033[0m \033[1;31mBold Red\033[0m \033[1;33mBold Yellow\033[0m</div>
+            <div class="terminal-output" id="test3"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 4: Real Python Output Simulation</h2>
+            <div class="raw-text">Raw: \033[1;32m=== System Information ===\033[0m\n\033[36mCurrent Directory:\033[0m /home/user\n\033[33mFiles in directory:\033[0m\n  \033[32m📄 file1.txt\033[0m (1024 bytes)\n  \033[34m📁 folder1\033[0m\n\033[1;35m=== End of Report ===\033[0m</div>
+            <div class="terminal-output" id="test4"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 5: Error Output</h2>
+            <div class="raw-text">Raw: \033[31m✗ Error: File not found\033[0m\n\033[33m⚠ Warning: Deprecated function\033[0m\n\033[32m✓ Success: Operation completed\033[0m</div>
+            <div class="terminal-output" id="test5"></div>
+        </div>
+    </div>
+
+    <script>
+        // ANSI escape sequence parser (same as in mcp_api_tester.html)
+        function parseAnsiEscapeCodes(text) {
+            if (!text) return '';
+            
+            // ANSI escape sequence regex
+            const ansiRegex = /\x1b\[([0-9;]*)([a-zA-Z])/g;
+            let result = '';
+            let lastIndex = 0;
+            let match;
+            
+            while ((match = ansiRegex.exec(text)) !== null) {
+                // Add text before the escape sequence
+                result += text.substring(lastIndex, match.index);
+                lastIndex = match.index + match[0].length;
+                
+                const codes = match[1].split(';').map(Number);
+                const command = match[2];
+                
+                // Handle different ANSI commands
+                switch (command) {
+                    case 'm': // Set graphics mode
+                        for (let code of codes) {
+                            switch (code) {
+                                case 0: // Reset
+                                    result += '</span>';
+                                    break;
+                                case 1: // Bold
+                                    result += '<span class="bold">';
+                                    break;
+                                case 2: // Dim
+                                    result += '<span class="dim">';
+                                    break;
+                                case 4: // Underline
+                                    result += '<span class="underline">';
+                                    break;
+                                case 5: // Blink
+                                    result += '<span class="blink">';
+                                    break;
+                                case 30: // Black
+                                case 31: // Red
+                                    result += '<span class="error">';
+                                    break;
+                                case 32: // Green
+                                    result += '<span class="success">';
+                                    break;
+                                case 33: // Yellow
+                                    result += '<span class="warning">';
+                                    break;
+                                case 34: // Blue
+                                case 36: // Cyan
+                                    result += '<span class="info">';
+                                    break;
+                                case 35: // Magenta
+                                    result += '<span class="error">';
+                                    break;
+                                case 37: // White
+                                    result += '<span class="dim">';
+                                    break;
+                                case 90: // Bright Black
+                                case 91: // Bright Red
+                                    result += '<span class="error">';
+                                    break;
+                                case 92: // Bright Green
+                                    result += '<span class="success">';
+                                    break;
+                                case 93: // Bright Yellow
+                                    result += '<span class="warning">';
+                                    break;
+                                case 94: // Bright Blue
+                                case 96: // Bright Cyan
+                                    result += '<span class="info">';
+                                    break;
+                                case 95: // Bright Magenta
+                                    result += '<span class="error">';
+                                    break;
+                                case 97: // Bright White
+                                    result += '<span class="bold">';
+                                    break;
+                            }
+                        }
+                        break;
+                    default:
+                        // Unknown command, just ignore
+                        break;
+                }
+            }
+            
+            // Add remaining text
+            result += text.substring(lastIndex);
+            
+            // Close any open spans
+            const openSpans = (result.match(/<span/g) || []).length;
+            const closeSpans = (result.match(/<\/span>/g) || []).length;
+            for (let i = 0; i < openSpans - closeSpans; i++) {
+                result += '</span>';
+            }
+            
+            return result;
+        }
+
+        // Test data
+        const tests = [
+            {
+                id: 'test1',
+                text: '\x1b[31mRed text\x1b[0m \x1b[32mGreen text\x1b[0m \x1b[33mYellow text\x1b[0m \x1b[34mBlue text\x1b[0m'
+            },
+            {
+                id: 'test2',
+                text: '\x1b[1mBold\x1b[0m \x1b[2mDim\x1b[0m \x1b[4mUnderline\x1b[0m \x1b[5mBlink\x1b[0m'
+            },
+            {
+                id: 'test3',
+                text: '\x1b[1;32mBold Green\x1b[0m \x1b[1;31mBold Red\x1b[0m \x1b[1;33mBold Yellow\x1b[0m'
+            },
+            {
+                id: 'test4',
+                text: '\x1b[1;32m=== System Information ===\x1b[0m\n\x1b[36mCurrent Directory:\x1b[0m /home/user\n\x1b[33mFiles in directory:\x1b[0m\n  \x1b[32m📄 file1.txt\x1b[0m (1024 bytes)\n  \x1b[34m📁 folder1\x1b[0m\n\x1b[1;35m=== End of Report ===\x1b[0m'
+            },
+            {
+                id: 'test5',
+                text: '\x1b[31m✗ Error: File not found\x1b[0m\n\x1b[33m⚠ Warning: Deprecated function\x1b[0m\n\x1b[32m✓ Success: Operation completed\x1b[0m'
+            }
+        ];
+
+        // Run tests
+        tests.forEach(test => {
+            const element = document.getElementById(test.id);
+            element.innerHTML = parseAnsiEscapeCodes(test.text);
+        });
+    </script>
+</body>
+</html> 
