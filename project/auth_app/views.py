@@ -22,6 +22,8 @@ from .serializers import (
 
 logger = logging.getLogger(__name__)
 
+REGISTRATION_ENABLED = False  # Set to True to enable registration
+
 
 class CustomTokenObtainPairView(TokenObtainPairView):
     """
@@ -56,6 +58,11 @@ class UserRegistrationView(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
     
     def create(self, request, *args, **kwargs):
+        if not REGISTRATION_ENABLED:
+            return Response(
+                {"error": "Registration is currently disabled. Please contact the administrator."},
+                status=status.HTTP_403_FORBIDDEN
+            )
         """Create new user with profile."""
         try:
             serializer = self.get_serializer(data=request.data)

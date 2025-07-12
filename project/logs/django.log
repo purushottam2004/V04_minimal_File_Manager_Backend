@@ -628,3 +628,70 @@ INFO 2025-07-13 00:39:35,556 basehttp 9140 16168 "GET /api/files/list/?path=hell
 WARNING 2025-07-13 00:39:37,328 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
 WARNING 2025-07-13 00:39:37,328 log 9140 16168 Forbidden: /api/files/list/
 WARNING 2025-07-13 00:39:37,329 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57
+DEBUG 2025-07-13 00:41:29,712 views 9140 4648 User info retrieved for: ayush
+INFO 2025-07-13 00:41:29,712 basehttp 9140 4648 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:41:29,721 views 9140 4648 User info retrieved for: ayush
+INFO 2025-07-13 00:41:29,721 basehttp 9140 4648 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:41:29,794 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:41:29,794 basehttp 9140 4648 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:41:29,809 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:41:29,810 basehttp 9140 4648 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:41:29,820 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:41:29,822 basehttp 9140 4648 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:41:29,830 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:41:29,836 basehttp 9140 4648 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:41:32,187 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:41:32,188 basehttp 9140 4648 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:41:33,043 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:41:33,044 basehttp 9140 4648 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+INFO 2025-07-13 00:41:34,098 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:41:34,099 basehttp 9140 4648 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:41:35,810 views 9140 4648 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:41:35,811 basehttp 9140 4648 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:49:56,087 basehttp 9140 11392 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:49:58,529 models 9140 11392 Creating new user profile for user: purushottamdafure
+INFO 2025-07-13 00:49:58,539 models 9140 11392 Created user profile for new user: purushottamdafure
+INFO 2025-07-13 00:49:58,539 models 9140 11392 Updating user profile for user: purushottamdafure
+DEBUG 2025-07-13 00:49:58,544 models 9140 11392 Saved user profile for user: purushottamdafure
+INFO 2025-07-13 00:49:58,544 serializers 9140 11392 Created new user: purushottamdafure
+INFO 2025-07-13 00:49:58,550 views 9140 11392 Created user directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:49:58,551 basehttp 9140 11392 "POST /api/auth/register/ HTTP/1.1" 201 123
+ERROR 2025-07-13 00:50:10,048 views 9140 11392 Login failed for user: purushottam - No active account found with the given credentials
+WARNING 2025-07-13 00:50:10,050 log 9140 11392 Unauthorized: /api/auth/login/
+WARNING 2025-07-13 00:50:10,051 basehttp 9140 11392 "POST /api/auth/login/ HTTP/1.1" 401 63
+INFO 2025-07-13 00:50:14,827 serializers 9140 11392 User purushottamdafure logged in successfully
+INFO 2025-07-13 00:50:14,828 views 9140 11392 Login successful for user: purushottamdafure
+INFO 2025-07-13 00:50:14,829 basehttp 9140 11392 "POST /api/auth/login/ HTTP/1.1" 200 783
+INFO 2025-07-13 00:50:14,926 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:50:14,926 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:50:14,926 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:50:14,926 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:50:14,947 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:50:14,948 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:50:14,959 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:50:14,961 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+DEBUG 2025-07-13 00:52:52,125 views 9140 11392 User info retrieved for: purushottamdafure
+INFO 2025-07-13 00:52:52,132 basehttp 9140 11392 "GET /api/auth/user-info/ HTTP/1.1" 200 387
+DEBUG 2025-07-13 00:52:52,167 views 9140 11392 User info retrieved for: purushottamdafure
+INFO 2025-07-13 00:52:52,175 basehttp 9140 11392 "GET /api/auth/user-info/ HTTP/1.1" 200 387
+INFO 2025-07-13 00:52:52,895 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:52:52,907 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:52:52,943 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:52:52,954 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:52:52,985 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:52:52,990 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:52:53,090 views 9140 11392 Directory listed for user purushottamdafure: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_purushottamdafure_5
+INFO 2025-07-13 00:52:53,097 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:52:59,851 serializers 9140 11392 User ayush logged in successfully
+INFO 2025-07-13 00:52:59,854 views 9140 11392 Login successful for user: ayush
+INFO 2025-07-13 00:52:59,856 basehttp 9140 11392 "POST /api/auth/login/ HTTP/1.1" 200 702
+INFO 2025-07-13 00:53:00,188 views 9140 11392 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:53:00,192 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:53:00,215 views 9140 11392 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:53:00,219 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:53:00,239 views 9140 11392 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:53:00,243 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:53:00,266 views 9140 11392 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:53:00,268 basehttp 9140 11392 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:54:25,708 autoreload 9140 18772 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\views.py changed, reloading.
+INFO 2025-07-13 00:54:28,972 autoreload 23316 16664 Watching for file changes with StatReloader
