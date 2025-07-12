@@ -1,0 +1,630 @@
+INFO 2025-07-12 23:16:18,476 models 2448 1336 Creating new user profile for user: admin
+INFO 2025-07-12 23:16:18,515 models 2448 1336 Created user profile for new user: admin
+INFO 2025-07-12 23:16:18,519 models 2448 1336 Updating user profile for user: admin
+DEBUG 2025-07-12 23:16:18,556 models 2448 1336 Saved user profile for user: admin
+INFO 2025-07-12 23:17:40,664 models 5112 2840 Updating user profile for user: admin
+DEBUG 2025-07-12 23:17:40,689 models 5112 2840 Saved user profile for user: admin
+INFO 2025-07-12 23:18:58,433 autoreload 2848 9668 Watching for file changes with StatReloader
+WARNING 2025-07-12 23:19:04,312 log 2848 17376 Not Found: /
+WARNING 2025-07-12 23:19:04,313 basehttp 2848 17376 "GET / HTTP/1.1" 404 2633
+WARNING 2025-07-12 23:19:04,662 log 2848 17376 Not Found: /favicon.ico
+WARNING 2025-07-12 23:19:04,662 basehttp 2848 17376 "GET /favicon.ico HTTP/1.1" 404 2684
+INFO 2025-07-12 23:19:10,060 basehttp 2848 17376 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-12 23:19:10,689 basehttp 2848 17376 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-07-12 23:19:10,738 basehttp 2848 17376 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,756 basehttp 2848 17376 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,758 basehttp 2848 9540 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,760 basehttp 2848 10008 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,761 basehttp 2848 16492 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,765 basehttp 2848 21544 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:10,778 basehttp 2848 21544 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:16,372 models 2848 21544 Updating user profile for user: admin
+DEBUG 2025-07-12 23:19:16,385 models 2848 21544 Saved user profile for user: admin
+INFO 2025-07-12 23:19:16,400 basehttp 2848 21544 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-12 23:19:16,501 basehttp 2848 21544 "GET /admin/ HTTP/1.1" 200 7207
+INFO 2025-07-12 23:19:16,578 basehttp 2848 16492 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:16,578 basehttp 2848 21544 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:16,578 basehttp 2848 10008 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,272 basehttp 2848 10008 "GET /admin/auth_app/userprofile/ HTTP/1.1" 200 13230
+INFO 2025-07-12 23:19:19,321 basehttp 2848 10008 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,343 basehttp 2848 9540 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,346 basehttp 2848 10008 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,346 basehttp 2848 16492 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,346 basehttp 2848 17376 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,354 basehttp 2848 14060 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,355 basehttp 2848 9540 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,355 basehttp 2848 10008 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,362 basehttp 2848 16492 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,369 basehttp 2848 14060 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,429 basehttp 2848 21544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:19:19,437 basehttp 2848 21544 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,477 basehttp 2848 21544 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,481 basehttp 2848 21544 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:19:19,540 basehttp 2848 17376 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-07-12 23:19:30,451 basehttp 2848 17376 "GET /admin/auth_app/userprofile/add/ HTTP/1.1" 200 15306
+INFO 2025-07-12 23:19:30,517 basehttp 2848 14060 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:19:30,524 basehttp 2848 17376 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-07-12 23:19:30,539 basehttp 2848 21544 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-07-12 23:19:30,559 basehttp 2848 14060 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-07-12 23:19:30,560 basehttp 2848 17376 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+WARNING 2025-07-12 23:21:25,877 log 2848 20072 Unauthorized: /api/auth/test-auth/
+WARNING 2025-07-12 23:21:25,877 basehttp 2848 20072 "GET /api/auth/test-auth/ HTTP/1.1" 401 58
+INFO 2025-07-12 23:21:28,692 models 2848 9360 Creating new user profile for user: testuser
+INFO 2025-07-12 23:21:28,700 models 2848 9360 Created user profile for new user: testuser
+INFO 2025-07-12 23:21:28,700 models 2848 9360 Updating user profile for user: testuser
+DEBUG 2025-07-12 23:21:28,709 models 2848 9360 Saved user profile for user: testuser
+INFO 2025-07-12 23:21:28,710 serializers 2848 9360 Created new user: testuser
+INFO 2025-07-12 23:21:28,711 views 2848 9360 Created user directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2
+INFO 2025-07-12 23:21:28,711 basehttp 2848 9360 "POST /api/auth/register/ HTTP/1.1" 201 105
+INFO 2025-07-12 23:21:32,490 serializers 2848 8068 User testuser logged in successfully
+INFO 2025-07-12 23:21:32,491 views 2848 8068 Login successful for user: testuser
+INFO 2025-07-12 23:21:32,494 basehttp 2848 8068 "POST /api/auth/login/ HTTP/1.1" 200 736
+DEBUG 2025-07-12 23:21:34,550 views 2848 912 Profile retrieved for user: testuser
+INFO 2025-07-12 23:21:34,553 basehttp 2848 912 "GET /api/auth/profile/ HTTP/1.1" 200 335
+DEBUG 2025-07-12 23:21:36,585 views 2848 3892 User info retrieved for: testuser
+INFO 2025-07-12 23:21:36,587 basehttp 2848 3892 "GET /api/auth/user-info/ HTTP/1.1" 200 340
+DEBUG 2025-07-12 23:21:38,627 views 2848 8308 Auth test endpoint accessed by: testuser
+INFO 2025-07-12 23:21:38,627 basehttp 2848 8308 "POST /api/auth/test-auth/ HTTP/1.1" 200 78
+INFO 2025-07-12 23:21:40,662 views 2848 4292 Directory listed for user testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2
+INFO 2025-07-12 23:21:40,662 basehttp 2848 4292 "GET /api/files/list/ HTTP/1.1" 200 38
+INFO 2025-07-12 23:21:42,699 views 2848 2584 Folder created by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder
+INFO 2025-07-12 23:21:42,699 basehttp 2848 2584 "POST /api/files/create-folder/ HTTP/1.1" 201 69
+INFO 2025-07-12 23:21:44,740 views 2848 18932 Directory listed for user testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2
+INFO 2025-07-12 23:21:44,740 basehttp 2848 18932 "GET /api/files/list/ HTTP/1.1" 200 122
+INFO 2025-07-12 23:21:46,782 views 2848 18124 File uploaded by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder\test.txt
+INFO 2025-07-12 23:21:46,782 basehttp 2848 18124 "POST /api/files/upload/ HTTP/1.1" 201 114
+INFO 2025-07-12 23:21:48,828 views 2848 4732 Directory listed for user testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder
+INFO 2025-07-12 23:21:48,830 basehttp 2848 4732 "GET /api/files/list/?path=test_folder HTTP/1.1" 200 129
+INFO 2025-07-12 23:21:50,883 views 2848 11080 Item renamed by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder\test.txt -> C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder\renamed_test.txt
+INFO 2025-07-12 23:21:50,887 basehttp 2848 11080 "POST /api/files/rename/ HTTP/1.1" 200 82
+WARNING 2025-07-12 23:21:52,911 log 2848 3636 Bad Request: /api/files/copy/
+WARNING 2025-07-12 23:21:52,911 basehttp 2848 3636 "POST /api/files/copy/ HTTP/1.1" 400 53
+WARNING 2025-07-12 23:21:54,965 log 2848 7416 Not Found: /api/files/move/
+WARNING 2025-07-12 23:21:54,967 basehttp 2848 7416 "POST /api/files/move/ HTTP/1.1" 404 33
+INFO 2025-07-12 23:21:56,994 views 2848 20928 Directory listed for user testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2
+INFO 2025-07-12 23:21:56,997 basehttp 2848 20928 "GET /api/files/list/ HTTP/1.1" 200 121
+INFO 2025-07-12 23:21:59,038 views 2848 19004 File downloaded by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder\renamed_test.txt
+INFO 2025-07-12 23:21:59,039 basehttp 2848 19004 "GET /api/files/download/?path=test_folder/renamed_test.txt HTTP/1.1" 200 28
+INFO 2025-07-12 23:22:01,150 views 2848 20844 Folder downloaded as ZIP by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder
+INFO 2025-07-12 23:22:01,150 basehttp 2848 20844 "GET /api/files/download-zip/?path=test_folder HTTP/1.1" 200 158
+INFO 2025-07-12 23:22:06,702 views 2848 16116 File deleted by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder\renamed_test.txt
+INFO 2025-07-12 23:22:06,704 basehttp 2848 16116 "POST /api/files/delete/ HTTP/1.1" 200 39
+INFO 2025-07-12 23:22:08,744 views 2848 11664 Directory deleted by testuser: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_testuser_2\test_folder
+INFO 2025-07-12 23:22:08,746 basehttp 2848 11664 "POST /api/files/delete/ HTTP/1.1" 200 39
+WARNING 2025-07-12 23:23:10,190 log 2848 9656 Unauthorized: /api/files/copy/
+WARNING 2025-07-12 23:23:10,191 basehttp 2848 9656 "POST /api/files/copy/ HTTP/1.1" 401 172
+INFO 2025-07-12 23:24:32,810 models 2848 19404 Creating new user profile for user: quicktest
+INFO 2025-07-12 23:24:32,819 models 2848 19404 Created user profile for new user: quicktest
+INFO 2025-07-12 23:24:32,819 models 2848 19404 Updating user profile for user: quicktest
+DEBUG 2025-07-12 23:24:32,830 models 2848 19404 Saved user profile for user: quicktest
+INFO 2025-07-12 23:24:32,831 serializers 2848 19404 Created new user: quicktest
+INFO 2025-07-12 23:24:32,831 views 2848 19404 Created user directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_quicktest_3
+INFO 2025-07-12 23:24:32,831 basehttp 2848 19404 "POST /api/auth/register/ HTTP/1.1" 201 107
+INFO 2025-07-12 23:24:35,438 serializers 2848 21664 User quicktest logged in successfully
+INFO 2025-07-12 23:24:35,438 views 2848 21664 Login successful for user: quicktest
+INFO 2025-07-12 23:24:35,442 basehttp 2848 21664 "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-07-12 23:24:37,474 views 2848 5840 Folder created by quicktest: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_quicktest_3\quick_test
+INFO 2025-07-12 23:24:37,476 basehttp 2848 5840 "POST /api/files/create-folder/ HTTP/1.1" 201 68
+INFO 2025-07-12 23:24:39,509 views 2848 1220 File uploaded by quicktest: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_quicktest_3\quick_test\testfile.txt
+INFO 2025-07-12 23:24:39,509 basehttp 2848 1220 "POST /api/files/upload/ HTTP/1.1" 201 121
+WARNING 2025-07-12 23:24:41,560 log 2848 4832 Bad Request: /api/files/copy/
+WARNING 2025-07-12 23:24:41,560 basehttp 2848 4832 "POST /api/files/copy/ HTTP/1.1" 400 53
+WARNING 2025-07-12 23:24:43,605 log 2848 10752 Not Found: /api/files/move/
+WARNING 2025-07-12 23:24:43,606 basehttp 2848 10752 "POST /api/files/move/ HTTP/1.1" 404 33
+INFO 2025-07-12 23:24:45,666 views 2848 3460 Directory listed for user quicktest: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_quicktest_3
+INFO 2025-07-12 23:24:45,668 basehttp 2848 3460 "GET /api/files/list/ HTTP/1.1" 200 121
+INFO 2025-07-12 23:26:08,082 autoreload 2848 9668 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\file_manager_core\views.py changed, reloading.
+INFO 2025-07-12 23:26:08,628 autoreload 23144 16260 Watching for file changes with StatReloader
+ERROR 2025-07-12 23:26:34,058 views 23144 4944 User registration failed: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+WARNING 2025-07-12 23:26:34,067 log 23144 4944 Bad Request: /api/auth/register/
+WARNING 2025-07-12 23:26:34,067 basehttp 23144 4944 "POST /api/auth/register/ HTTP/1.1" 400 138
+ERROR 2025-07-12 23:26:51,028 views 23144 2436 User registration failed: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+WARNING 2025-07-12 23:26:51,028 log 23144 2436 Bad Request: /api/auth/register/
+WARNING 2025-07-12 23:26:51,028 basehttp 23144 2436 "POST /api/auth/register/ HTTP/1.1" 400 138
+INFO 2025-07-12 23:26:53,711 serializers 23144 17236 User quicktest logged in successfully
+INFO 2025-07-12 23:26:53,711 views 23144 17236 Login successful for user: quicktest
+INFO 2025-07-12 23:26:53,711 basehttp 23144 17236 "POST /api/auth/login/ HTTP/1.1" 200 738
+WARNING 2025-07-12 23:26:55,768 log 23144 23280 Conflict: /api/files/create-folder/
+WARNING 2025-07-12 23:26:55,769 basehttp 23144 23280 "POST /api/files/create-folder/ HTTP/1.1" 409 33
+WARNING 2025-07-12 23:26:57,797 log 23144 15768 Conflict: /api/files/upload/
+WARNING 2025-07-12 23:26:57,797 basehttp 23144 15768 "POST /api/files/upload/ HTTP/1.1" 409 44
+WARNING 2025-07-12 23:26:59,828 log 23144 8440 Conflict: /api/files/copy/
+WARNING 2025-07-12 23:26:59,828 basehttp 23144 8440 "POST /api/files/copy/ HTTP/1.1" 409 61
+WARNING 2025-07-12 23:27:01,870 log 23144 19632 Bad Request: /api/files/move/
+WARNING 2025-07-12 23:27:01,870 basehttp 23144 19632 "POST /api/files/move/ HTTP/1.1" 400 53
+INFO 2025-07-12 23:27:03,905 views 23144 15572 Directory listed for user quicktest: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_quicktest_3
+INFO 2025-07-12 23:27:03,908 basehttp 23144 15572 "GET /api/files/list/ HTTP/1.1" 200 121
+INFO 2025-07-12 23:28:19,757 autoreload 14028 23320 Watching for file changes with StatReloader
+WARNING 2025-07-12 23:28:25,028 log 14028 4296 Not Found: /
+WARNING 2025-07-12 23:28:25,030 basehttp 14028 4296 "GET / HTTP/1.1" 404 2633
+INFO 2025-07-12 23:28:28,900 basehttp 14028 4296 "GET /admin/ HTTP/1.1" 200 7207
+INFO 2025-07-12 23:28:33,153 basehttp 14028 4296 "GET /admin/auth/user/ HTTP/1.1" 200 13173
+INFO 2025-07-12 23:28:33,207 basehttp 14028 8960 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:28:33,210 basehttp 14028 4296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:33,273 basehttp 14028 4296 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-07-12 23:28:35,596 basehttp 14028 4296 "GET /admin/auth_app/userprofile/ HTTP/1.1" 200 14472
+INFO 2025-07-12 23:28:35,628 basehttp 14028 4296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:37,541 basehttp 14028 4296 "GET /admin/auth/user/ HTTP/1.1" 200 13173
+INFO 2025-07-12 23:28:37,578 basehttp 14028 4296 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:46,062 basehttp 14028 18252 "GET /admin/auth/user/3/change/ HTTP/1.1" 200 31928
+INFO 2025-07-12 23:28:46,122 basehttp 14028 5616 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:46,458 basehttp 14028 18252 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-07-12 23:28:46,477 basehttp 14028 18436 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2025-07-12 23:28:46,479 basehttp 14028 13716 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-07-12 23:28:46,494 basehttp 14028 6844 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-07-12 23:28:46,506 basehttp 14028 18512 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-07-12 23:28:46,586 basehttp 14028 6844 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-07-12 23:28:46,587 basehttp 14028 13716 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-07-12 23:28:46,590 basehttp 14028 18512 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-07-12 23:28:51,313 basehttp 14028 18512 "GET /admin/auth/user/3/delete/ HTTP/1.1" 200 8402
+INFO 2025-07-12 23:28:51,386 basehttp 14028 18512 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-07-12 23:28:52,704 basehttp 14028 18512 "POST /admin/auth/user/3/delete/ HTTP/1.1" 302 0
+INFO 2025-07-12 23:28:52,734 basehttp 14028 18512 "GET /admin/auth/user/ HTTP/1.1" 200 12861
+INFO 2025-07-12 23:28:52,768 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:54,241 basehttp 14028 18512 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 31923
+INFO 2025-07-12 23:28:54,278 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:28:56,209 basehttp 14028 18512 "GET /admin/auth/user/2/delete/ HTTP/1.1" 200 8398
+INFO 2025-07-12 23:28:57,471 basehttp 14028 18512 "POST /admin/auth/user/2/delete/ HTTP/1.1" 302 0
+INFO 2025-07-12 23:28:57,511 basehttp 14028 18512 "GET /admin/auth/user/ HTTP/1.1" 200 12392
+INFO 2025-07-12 23:28:57,549 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:29:00,577 basehttp 14028 18512 "GET /admin/auth_app/userprofile/ HTTP/1.1" 200 13230
+INFO 2025-07-12 23:29:00,612 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:29:05,708 basehttp 14028 18512 "GET /admin/auth/user/ HTTP/1.1" 200 12237
+INFO 2025-07-12 23:29:05,746 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:29:13,538 basehttp 14028 18512 "GET /admin/auth/user/add/ HTTP/1.1" 200 12920
+INFO 2025-07-12 23:29:13,583 basehttp 14028 18512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-12 23:29:13,605 basehttp 14028 18512 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2025-07-12 23:29:13,637 basehttp 14028 13716 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2025-07-13 00:03:30,194 autoreload 16940 20004 Watching for file changes with StatReloader
+INFO 2025-07-13 00:04:10,510 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:04:44,527 basehttp 16940 22180 "GET /admin HTTP/1.1" 301 0
+INFO 2025-07-13 00:04:44,537 basehttp 16940 15768 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-13 00:04:44,616 basehttp 16940 15768 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-07-13 00:04:44,780 basehttp 16940 15768 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-07-13 00:04:44,780 basehttp 16940 13336 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-07-13 00:04:44,797 basehttp 16940 13336 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-07-13 00:04:44,797 basehttp 16940 15768 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-13 00:04:44,804 basehttp 16940 13336 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-07-13 00:04:44,804 basehttp 16940 15768 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-07-13 00:04:44,838 basehttp 16940 13336 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-07-13 00:04:44,926 log 16940 13336 Not Found: /favicon.ico
+WARNING 2025-07-13 00:04:44,928 basehttp 16940 13336 "GET /favicon.ico HTTP/1.1" 404 2684
+INFO 2025-07-13 00:04:48,670 models 16940 13336 Updating user profile for user: admin
+DEBUG 2025-07-13 00:04:48,670 models 16940 13336 Saved user profile for user: admin
+INFO 2025-07-13 00:04:48,687 basehttp 16940 13336 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-13 00:04:48,710 basehttp 16940 13336 "GET /admin/ HTTP/1.1" 200 7849
+INFO 2025-07-13 00:04:48,751 basehttp 16940 13336 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-13 00:04:48,764 basehttp 16940 20280 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-13 00:04:48,764 basehttp 16940 15824 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-07-13 00:04:48,764 basehttp 16940 15768 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-13 00:04:51,342 basehttp 16940 15768 "GET /admin/auth/user/add/ HTTP/1.1" 200 12920
+INFO 2025-07-13 00:04:51,368 basehttp 16940 15768 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-07-13 00:04:51,387 basehttp 16940 15768 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:04:51,394 basehttp 16940 15768 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2025-07-13 00:04:51,397 basehttp 16940 15768 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-07-13 00:04:51,406 basehttp 16940 20280 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-13 00:04:51,419 basehttp 16940 13336 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-13 00:04:51,419 basehttp 16940 1772 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-07-13 00:04:51,419 basehttp 16940 18052 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-07-13 00:04:51,424 basehttp 16940 13336 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-07-13 00:04:51,430 basehttp 16940 15768 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-13 00:04:51,430 basehttp 16940 20280 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-13 00:04:51,463 basehttp 16940 15824 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-13 00:04:51,474 basehttp 16940 15824 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-07-13 00:04:51,481 basehttp 16940 15824 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2025-07-13 00:04:51,547 basehttp 16940 18052 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-13 00:05:07,013 models 16940 18052 Creating new user profile for user: ayush
+INFO 2025-07-13 00:05:07,015 models 16940 18052 Created user profile for new user: ayush
+INFO 2025-07-13 00:05:07,015 models 16940 18052 Updating user profile for user: ayush
+DEBUG 2025-07-13 00:05:07,016 models 16940 18052 Saved user profile for user: ayush
+INFO 2025-07-13 00:05:07,016 basehttp 16940 18052 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2025-07-13 00:05:07,126 basehttp 16940 18052 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 32074
+INFO 2025-07-13 00:05:07,160 basehttp 16940 13336 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-07-13 00:05:07,162 basehttp 16940 1772 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-07-13 00:05:07,162 basehttp 16940 15824 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-07-13 00:05:07,163 basehttp 16940 20280 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2025-07-13 00:05:07,164 basehttp 16940 18052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:05:07,164 basehttp 16940 15768 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-07-13 00:05:07,194 basehttp 16940 18052 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-07-13 00:05:07,228 basehttp 16940 1772 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-07-13 00:05:07,228 basehttp 16940 15768 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-07-13 00:05:07,230 basehttp 16940 20280 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-07-13 00:05:07,238 basehttp 16940 18052 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-13 00:05:30,846 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:33,795 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:40,622 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:45,908 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:46,813 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:47,211 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:47,421 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:47,770 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:48,021 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:48,238 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:48,528 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:49,168 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:49,812 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:52,102 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:05:52,726 basehttp 16940 17916 "OPTIONS /api/auth/login/ HTTP/1.1" 200 518
+INFO 2025-07-13 00:06:01,958 basehttp 16940 17500 "GET /admin/auth/user/ HTTP/1.1" 200 12678
+INFO 2025-07-13 00:06:02,005 basehttp 16940 17500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:06:03,616 basehttp 16940 17500 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 31854
+INFO 2025-07-13 00:06:03,649 basehttp 16940 17500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:06:05,983 basehttp 16940 17500 "GET /admin/auth/user/ HTTP/1.1" 200 12678
+INFO 2025-07-13 00:06:06,007 basehttp 16940 17500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:06:08,478 basehttp 16940 17500 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 31854
+INFO 2025-07-13 00:06:08,512 basehttp 16940 17500 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 00:07:31,023 basehttp 16940 17916 "OPTIONS /api/auth/register/ HTTP/1.1" 200 1058
+WARNING 2025-07-13 00:08:38,111 log 16940 18052 Unauthorized: /api/auth/test-auth/
+WARNING 2025-07-13 00:08:38,114 basehttp 16940 18052 "GET /api/auth/test-auth/ HTTP/1.1" 401 3767
+INFO 2025-07-13 00:08:38,211 basehttp 16940 18052 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-13 00:08:38,227 basehttp 16940 20280 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-13 00:08:38,227 basehttp 16940 1772 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-13 00:08:38,227 basehttp 16940 15768 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-13 00:08:38,254 basehttp 16940 15824 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-13 00:08:38,273 basehttp 16940 18052 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-13 00:08:38,282 basehttp 16940 15824 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-13 00:08:38,294 basehttp 16940 1772 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-13 00:08:38,297 basehttp 16940 15768 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-13 00:08:38,331 basehttp 16940 18052 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-13 00:08:38,332 basehttp 16940 20280 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-13 00:08:38,337 basehttp 16940 13336 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-13 00:09:11,743 basehttp 16940 17916 "OPTIONS /api/auth/register/ HTTP/1.1" 200 1058
+INFO 2025-07-13 00:09:15,055 basehttp 16940 17916 "OPTIONS /api/auth/register/ HTTP/1.1" 200 1058
+INFO 2025-07-13 00:11:32,119 autoreload 16940 20004 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 00:11:32,643 autoreload 4616 20108 Watching for file changes with StatReloader
+INFO 2025-07-13 00:11:35,274 autoreload 4616 20108 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 00:11:35,928 autoreload 4800 19660 Watching for file changes with StatReloader
+INFO 2025-07-13 00:11:42,788 autoreload 4800 19660 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 00:11:43,283 autoreload 21924 21760 Watching for file changes with StatReloader
+INFO 2025-07-13 00:11:45,972 autoreload 21924 21760 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\project\settings.py changed, reloading.
+INFO 2025-07-13 00:12:35,119 autoreload 9140 18772 Watching for file changes with StatReloader
+INFO 2025-07-13 00:12:48,032 basehttp 9140 2068 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:12:48,956 serializers 9140 2068 User ayush logged in successfully
+INFO 2025-07-13 00:12:48,956 views 9140 2068 Login successful for user: ayush
+INFO 2025-07-13 00:12:48,956 basehttp 9140 2068 "POST /api/auth/login/ HTTP/1.1" 200 702
+INFO 2025-07-13 00:12:49,125 basehttp 9140 2068 "OPTIONS /api/files/list/?path= HTTP/1.1" 200 0
+INFO 2025-07-13 00:12:49,130 views 9140 2068 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:12:49,130 basehttp 9140 2068 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:12:49,147 views 9140 2068 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:12:49,149 basehttp 9140 2068 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 00:13:10,590 basehttp 9140 2068 "OPTIONS /api/files/create-folder/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:13:10,590 views 9140 2068 Folder created by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:10,590 basehttp 9140 2068 "POST /api/files/create-folder/ HTTP/1.1" 201 67
+INFO 2025-07-13 00:13:10,606 views 9140 2068 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:10,606 basehttp 9140 2068 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:11,959 basehttp 9140 2068 "OPTIONS /api/files/list/?path=newfolder HTTP/1.1" 200 0
+INFO 2025-07-13 00:13:11,967 views 9140 2068 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:11,968 basehttp 9140 2068 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:13:13,222 basehttp 9140 2068 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:13:13,223 basehttp 9140 18368 "OPTIONS /api/auth/user-info/ HTTP/1.1" 200 0
+DEBUG 2025-07-13 00:13:13,231 views 9140 18368 User info retrieved for: ayush
+INFO 2025-07-13 00:13:13,232 basehttp 9140 18368 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:13:13,239 views 9140 18368 User info retrieved for: ayush
+INFO 2025-07-13 00:13:13,241 basehttp 9140 18368 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:13:13,308 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:13,308 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:13,322 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:13,323 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:14,227 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:14,227 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+DEBUG 2025-07-13 00:13:15,206 views 9140 18368 User info retrieved for: ayush
+INFO 2025-07-13 00:13:15,208 basehttp 9140 18368 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:13:15,210 views 9140 18368 User info retrieved for: ayush
+INFO 2025-07-13 00:13:15,210 basehttp 9140 18368 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:13:15,279 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:15,283 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:15,292 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:15,294 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:16,260 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:16,260 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:13:47,671 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:47,672 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:53,384 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:53,384 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:13:54,335 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:54,337 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:13:55,348 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:13:55,348 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:13:56,476 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:13:56,478 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:16:19,711 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:16:19,711 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:16:23,926 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:16:23,927 basehttp 9140 18368 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:16:24,949 views 9140 18368 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:16:24,949 basehttp 9140 18368 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+DEBUG 2025-07-13 00:22:48,926 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:22:48,926 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:22:48,934 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:22:48,934 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:22:49,118 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:22:49,120 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:22:49,131 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:22:49,133 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:22:49,142 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:22:49,144 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:22:49,155 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:22:49,157 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+DEBUG 2025-07-13 00:23:14,995 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:23:15,000 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:23:15,010 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:23:15,013 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:23:15,157 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:15,157 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:15,170 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:15,172 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:15,181 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:15,182 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:15,194 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:15,195 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:25,195 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:23:25,196 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+DEBUG 2025-07-13 00:23:27,616 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:23:27,617 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:23:27,626 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:23:27,628 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:23:27,692 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:27,692 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:27,699 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:27,701 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:27,708 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:27,709 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:23:27,715 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:23:27,717 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+DEBUG 2025-07-13 00:24:41,166 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:24:41,168 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:24:41,173 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:24:41,173 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:24:41,250 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:24:41,251 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:24:41,258 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:24:41,260 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:24:41,267 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:24:41,268 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:24:41,276 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:24:41,277 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:24:41,550 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:24:41,552 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:25:44,953 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:25:44,960 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:25:46,232 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:25:46,234 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:26:00,666 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:00,667 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:00,669 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:00,669 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+DEBUG 2025-07-13 00:26:17,809 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:26:17,813 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:26:17,826 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:26:17,830 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:26:18,770 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:18,783 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:18,834 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:18,851 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:18,907 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:18,907 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:18,922 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:18,922 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:19,919 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:26:19,920 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:26:20,993 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:20,993 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:21,922 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:26:21,922 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:26:23,045 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:23,049 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:23,786 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:26:23,787 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:26:24,848 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:26:24,848 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:26:25,863 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:25,863 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:26,596 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:26,596 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 120
+INFO 2025-07-13 00:26:29,868 basehttp 9140 1816 "OPTIONS /api/files/upload/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:26:29,889 views 9140 1816 File uploaded by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\apps.py
+INFO 2025-07-13 00:26:29,889 basehttp 9140 1816 "POST /api/files/upload/ HTTP/1.1" 201 100
+INFO 2025-07-13 00:26:29,900 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:29,900 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+INFO 2025-07-13 00:26:32,601 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:32,607 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+DEBUG 2025-07-13 00:26:33,921 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:26:33,927 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:26:33,933 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:26:33,936 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:26:33,995 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:33,996 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+INFO 2025-07-13 00:26:34,004 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:34,005 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+INFO 2025-07-13 00:26:34,015 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:34,016 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+INFO 2025-07-13 00:26:34,023 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:26:34,024 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 201
+INFO 2025-07-13 00:27:33,750 views 9140 1816 File uploaded by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\github.zip
+INFO 2025-07-13 00:27:33,750 basehttp 9140 1816 "POST /api/files/upload/ HTTP/1.1" 201 109
+INFO 2025-07-13 00:27:33,766 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:27:33,766 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 288
+INFO 2025-07-13 00:27:40,109 views 9140 1816 File uploaded by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\DUMMY.zip
+INFO 2025-07-13 00:27:40,109 basehttp 9140 1816 "POST /api/files/upload/ HTTP/1.1" 201 106
+INFO 2025-07-13 00:27:40,124 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:27:40,124 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 373
+INFO 2025-07-13 00:27:46,946 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:27:46,946 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 47
+INFO 2025-07-13 00:28:39,738 views 9140 1816 File uploaded by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder\OneDrive_2024-04-14 (1).zip
+INFO 2025-07-13 00:28:39,738 basehttp 9140 1816 "POST /api/files/upload/ HTTP/1.1" 201 157
+INFO 2025-07-13 00:28:39,849 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:28:39,850 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+DEBUG 2025-07-13 00:28:43,364 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:28:43,364 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:28:43,371 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:28:43,378 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:28:43,446 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:28:43,451 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:28:43,461 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:28:43,463 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:28:43,474 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:28:43,476 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:28:43,488 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:28:43,490 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:29:11,396 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:29:11,396 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:29:15,801 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:15,802 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:29:16,993 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:29:16,994 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:29:22,652 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:22,654 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 371
+INFO 2025-07-13 00:29:26,369 views 9140 1816 Folder created by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:29:26,369 basehttp 9140 1816 "POST /api/files/create-folder/ HTTP/1.1" 201 63
+INFO 2025-07-13 00:29:26,387 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:26,390 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:29:28,820 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:28,820 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+DEBUG 2025-07-13 00:29:30,344 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:29:30,346 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:29:30,355 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:29:30,357 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:29:30,460 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:30,462 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:29:30,476 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:30,479 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:29:30,491 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:30,495 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:29:30,510 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:29:30,512 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:29:31,701 basehttp 9140 1816 "OPTIONS /api/files/list/?path=hello HTTP/1.1" 200 0
+INFO 2025-07-13 00:29:31,710 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:29:31,711 basehttp 9140 1816 "GET /api/files/list/?path=hello HTTP/1.1" 200 43
+INFO 2025-07-13 00:29:33,102 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:29:33,103 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:30:05,945 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:05,946 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 449
+INFO 2025-07-13 00:30:07,788 basehttp 9140 1816 "OPTIONS /api/files/download/?path=apps.py HTTP/1.1" 200 0
+INFO 2025-07-13 00:30:07,796 views 9140 1816 File downloaded by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\apps.py
+INFO 2025-07-13 00:30:07,797 basehttp 9140 1816 "GET /api/files/download/?path=apps.py HTTP/1.1" 200 270
+INFO 2025-07-13 00:30:13,934 basehttp 9140 1816 "OPTIONS /api/files/rename/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:30:13,950 views 9140 1816 Item renamed by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\apps.py -> C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\appps.py
+INFO 2025-07-13 00:30:13,950 basehttp 9140 1816 "POST /api/files/rename/ HTTP/1.1" 200 61
+INFO 2025-07-13 00:30:13,974 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:13,974 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+DEBUG 2025-07-13 00:30:16,131 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:30:16,133 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+DEBUG 2025-07-13 00:30:16,141 views 9140 1816 User info retrieved for: ayush
+INFO 2025-07-13 00:30:16,141 basehttp 9140 1816 "GET /api/auth/user-info/ HTTP/1.1" 200 306
+INFO 2025-07-13 00:30:16,223 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:16,224 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:30:16,236 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:16,237 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:30:16,246 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:16,247 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:30:16,257 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:30:16,259 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:30:19,878 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:30:19,880 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:30:21,579 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:30:21,582 basehttp 9140 1816 "GET /api/files/list/?path=hello HTTP/1.1" 200 43
+INFO 2025-07-13 00:30:22,535 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:30:22,537 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:30:24,396 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:30:24,397 basehttp 9140 1816 "GET /api/files/list/?path=hello HTTP/1.1" 200 43
+INFO 2025-07-13 00:30:25,330 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:30:25,331 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:32:13,583 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:32:13,585 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:32:28,829 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:32:28,831 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:32:31,585 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:32:31,585 basehttp 9140 1816 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:33:44,924 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:33:44,929 basehttp 9140 1816 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:33:46,729 views 9140 1816 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:33:46,729 basehttp 9140 1816 "GET /api/files/list/?path=hello HTTP/1.1" 200 43
+INFO 2025-07-13 00:33:49,696 views 9140 20544 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:33:49,697 basehttp 9140 20544 "GET /api/files/list/?path=hello HTTP/1.1" 200 43
+INFO 2025-07-13 00:33:49,714 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:33:49,714 basehttp 9140 16168 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:33:49,735 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:33:49,739 basehttp 9140 16168 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:33:49,791 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:33:49,793 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:33:55,731 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:33:55,733 basehttp 9140 16168 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:33:57,567 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:33:57,570 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:34:17,734 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:34:17,737 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:34:17,753 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:34:17,753 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 450
+INFO 2025-07-13 00:34:49,419 basehttp 9140 16168 "OPTIONS /api/files/copy/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:34:49,590 views 9140 16168 Item copied by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder -> C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:34:49,590 basehttp 9140 16168 "POST /api/files/copy/ HTTP/1.1" 200 68
+INFO 2025-07-13 00:34:49,608 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:34:49,610 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:34:51,431 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:34:51,432 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 123
+INFO 2025-07-13 00:34:54,159 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:34:54,160 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:34:55,053 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:34:55,054 basehttp 9140 16168 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:37:07,702 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:37:07,702 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:37:07,702 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:37:07,702 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:37:30,055 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:37:30,057 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 123
+INFO 2025-07-13 00:37:48,357 basehttp 9140 16168 "OPTIONS /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 0
+INFO 2025-07-13 00:37:48,365 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:37:48,366 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 159
+INFO 2025-07-13 00:37:53,649 basehttp 9140 16168 "OPTIONS /api/files/delete/ HTTP/1.1" 200 0
+INFO 2025-07-13 00:37:53,703 views 9140 16168 File deleted by ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder\OneDrive_2024-04-14 (1).zip
+INFO 2025-07-13 00:37:53,710 basehttp 9140 16168 "POST /api/files/delete/ HTTP/1.1" 200 39
+INFO 2025-07-13 00:37:53,722 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:37:53,723 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+INFO 2025-07-13 00:37:55,171 basehttp 9140 16168 "OPTIONS /api/files/list/?path=%2Fhello HTTP/1.1" 200 0
+WARNING 2025-07-13 00:37:55,178 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+WARNING 2025-07-13 00:37:55,181 log 9140 16168 Forbidden: /api/files/list/
+WARNING 2025-07-13 00:37:55,182 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57
+INFO 2025-07-13 00:37:59,756 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:37:59,757 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+WARNING 2025-07-13 00:38:01,789 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+WARNING 2025-07-13 00:38:01,789 log 9140 16168 Forbidden: /api/files/list/
+WARNING 2025-07-13 00:38:01,791 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57
+INFO 2025-07-13 00:38:04,195 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:38:04,196 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+INFO 2025-07-13 00:38:05,613 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:38:05,613 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:38:06,205 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:38:06,213 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:38:11,025 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:38:11,025 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:38:12,265 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:38:12,267 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+INFO 2025-07-13 00:38:13,399 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:38:13,399 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:38:14,623 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:38:14,624 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+WARNING 2025-07-13 00:38:16,789 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+WARNING 2025-07-13 00:38:16,790 log 9140 16168 Forbidden: /api/files/list/
+WARNING 2025-07-13 00:38:16,791 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57
+INFO 2025-07-13 00:38:59,580 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\newfolder
+INFO 2025-07-13 00:38:59,593 basehttp 9140 16168 "GET /api/files/list/?path=newfolder HTTP/1.1" 200 153
+INFO 2025-07-13 00:39:01,598 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:39:01,599 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:39:24,593 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:39:24,609 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:39:25,795 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:39:25,798 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:39:26,987 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:39:26,990 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+WARNING 2025-07-13 00:39:28,113 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+WARNING 2025-07-13 00:39:28,114 log 9140 16168 Forbidden: /api/files/list/
+WARNING 2025-07-13 00:39:28,115 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57
+INFO 2025-07-13 00:39:33,241 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+INFO 2025-07-13 00:39:33,241 basehttp 9140 16168 "GET /api/files/list/?path= HTTP/1.1" 200 451
+INFO 2025-07-13 00:39:34,247 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello
+INFO 2025-07-13 00:39:34,248 basehttp 9140 16168 "GET /api/files/list/?path=hello HTTP/1.1" 200 124
+INFO 2025-07-13 00:39:35,556 views 9140 16168 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4\hello\newfolder
+INFO 2025-07-13 00:39:35,556 basehttp 9140 16168 "GET /api/files/list/?path=hello%2Fnewfolder HTTP/1.1" 200 53
+WARNING 2025-07-13 00:39:37,328 views 9140 16168 Security violation: C:/hello is outside user directory C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_4
+WARNING 2025-07-13 00:39:37,328 log 9140 16168 Forbidden: /api/files/list/
+WARNING 2025-07-13 00:39:37,329 basehttp 9140 16168 "GET /api/files/list/?path=%2Fhello HTTP/1.1" 403 57

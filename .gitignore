@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+db.sqlite3
+.env
+
+#logging
+logs/django.log
+project/master_dir/
