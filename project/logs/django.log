@@ -985,3 +985,783 @@ DEBUG 2025-07-13 01:41:31,881 utils 22548 7404 Working directory: C:\Users\purus
 INFO 2025-07-13 01:41:32,033 utils 22548 7404 Script execution completed with return code: 0
 DEBUG 2025-07-13 01:41:32,039 utils 22548 7404 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user\tmp7c6rirrc.py
 INFO 2025-07-13 01:41:32,041 basehttp 22548 7404 "POST /mcp_api/run_python_code HTTP/1.1" 200 166
+INFO 2025-07-13 13:19:31,151 autoreload 15496 8264 Watching for file changes with StatReloader
+INFO 2025-07-13 13:19:37,636 basehttp 15496 17044 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:19:37,642 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:19:37,643 middleware 15496 17044 MCP Middleware: Request path: /api/auth/login/
+DEBUG 2025-07-13 13:19:37,643 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+ERROR 2025-07-13 13:19:37,647 views 15496 17044 Login failed for user: ayush - no such table: auth_user
+ERROR 2025-07-13 13:19:37,901 log 15496 17044 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\views.py", line 41, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\serializers.py", line 28, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+ERROR 2025-07-13 13:19:37,907 basehttp 15496 17044 "POST /api/auth/login/ HTTP/1.1" 500 217277
+DEBUG 2025-07-13 13:19:40,862 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:19:40,862 middleware 15496 17044 MCP Middleware: Request path: /api/auth/login/
+DEBUG 2025-07-13 13:19:40,862 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+ERROR 2025-07-13 13:19:40,867 views 15496 17044 Login failed for user: ayush - no such table: auth_user
+ERROR 2025-07-13 13:19:40,949 log 15496 17044 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\views.py", line 41, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\serializers.py", line 28, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+ERROR 2025-07-13 13:19:40,952 basehttp 15496 17044 "POST /api/auth/login/ HTTP/1.1" 500 217277
+DEBUG 2025-07-13 13:19:41,670 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:19:41,670 middleware 15496 17044 MCP Middleware: Request path: /api/auth/login/
+DEBUG 2025-07-13 13:19:41,670 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+ERROR 2025-07-13 13:19:41,674 views 15496 17044 Login failed for user: ayush - no such table: auth_user
+ERROR 2025-07-13 13:19:41,742 log 15496 17044 Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\views.py", line 41, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\auth_app\serializers.py", line 28, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+ERROR 2025-07-13 13:19:41,748 basehttp 15496 17044 "POST /api/auth/login/ HTTP/1.1" 500 217277
+DEBUG 2025-07-13 13:19:59,640 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:19:59,640 middleware 15496 8164 MCP Middleware: Request path: /
+DEBUG 2025-07-13 13:19:59,640 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+WARNING 2025-07-13 13:19:59,649 log 15496 8164 Not Found: /
+WARNING 2025-07-13 13:19:59,650 basehttp 15496 8164 "GET / HTTP/1.1" 404 2784
+DEBUG 2025-07-13 13:20:00,221 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:20:00,223 middleware 15496 8164 MCP Middleware: Request path: /
+DEBUG 2025-07-13 13:20:00,223 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+WARNING 2025-07-13 13:20:00,232 log 15496 8164 Not Found: /
+WARNING 2025-07-13 13:20:00,236 basehttp 15496 8164 "GET / HTTP/1.1" 404 2784
+DEBUG 2025-07-13 13:20:00,288 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:20:00,289 middleware 15496 8164 MCP Middleware: Request path: /favicon.ico
+DEBUG 2025-07-13 13:20:00,289 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+WARNING 2025-07-13 13:20:00,297 log 15496 8164 Not Found: /favicon.ico
+WARNING 2025-07-13 13:20:00,297 basehttp 15496 8164 "GET /favicon.ico HTTP/1.1" 404 2835
+DEBUG 2025-07-13 13:20:04,314 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:20:04,315 middleware 15496 8164 MCP Middleware: Request path: /admin/
+DEBUG 2025-07-13 13:20:04,315 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:20:04,330 basehttp 15496 8164 "GET /admin/ HTTP/1.1" 302 0
+DEBUG 2025-07-13 13:20:04,331 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:20:04,332 middleware 15496 8164 MCP Middleware: Request path: /admin/login/
+DEBUG 2025-07-13 13:20:04,332 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:20:04,386 basehttp 15496 8164 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-07-13 13:20:04,404 basehttp 15496 4092 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,405 basehttp 15496 8164 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,408 basehttp 15496 4092 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,409 basehttp 15496 8164 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,411 basehttp 15496 4092 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,412 basehttp 15496 8164 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:20:04,417 basehttp 15496 8164 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+DEBUG 2025-07-13 13:20:15,943 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:20:15,944 middleware 15496 8164 MCP Middleware: Request path: /admin/login/
+DEBUG 2025-07-13 13:20:15,944 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+ERROR 2025-07-13 13:20:16,185 log 15496 8164 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 366, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: auth_user
+ERROR 2025-07-13 13:20:16,192 basehttp 15496 8164 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 257843
+INFO 2025-07-13 13:21:38,759 models 17220 9124 Creating new user profile for user: admin
+INFO 2025-07-13 13:21:38,759 models 17220 9124 Created user profile for new user: admin
+INFO 2025-07-13 13:21:38,759 models 17220 9124 Updating user profile for user: admin
+DEBUG 2025-07-13 13:21:38,759 models 17220 9124 Saved user profile for user: admin
+DEBUG 2025-07-13 13:21:44,442 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:21:44,443 middleware 15496 8164 MCP Middleware: Request path: /admin/login/
+DEBUG 2025-07-13 13:21:44,443 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:21:44,923 basehttp 15496 8164 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4341
+DEBUG 2025-07-13 13:21:51,464 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:21:51,464 middleware 15496 8164 MCP Middleware: Request path: /admin/login/
+DEBUG 2025-07-13 13:21:51,464 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:21:52,331 models 15496 8164 Updating user profile for user: admin
+DEBUG 2025-07-13 13:21:52,350 models 15496 8164 Saved user profile for user: admin
+INFO 2025-07-13 13:21:52,360 basehttp 15496 8164 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+DEBUG 2025-07-13 13:21:52,362 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:21:52,363 middleware 15496 8164 MCP Middleware: Request path: /admin/
+DEBUG 2025-07-13 13:21:52,363 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:21:52,427 basehttp 15496 8164 "GET /admin/ HTTP/1.1" 200 7207
+INFO 2025-07-13 13:21:52,440 basehttp 15496 8164 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:52,447 basehttp 15496 8164 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:52,447 basehttp 15496 4092 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+DEBUG 2025-07-13 13:21:56,876 middleware 15496 4092 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:21:56,876 middleware 15496 4092 MCP Middleware: Request path: /admin/auth/user/add/
+DEBUG 2025-07-13 13:21:56,876 middleware 15496 4092 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:21:56,944 basehttp 15496 4092 "GET /admin/auth/user/add/ HTTP/1.1" 200 12920
+INFO 2025-07-13 13:21:56,969 basehttp 15496 4092 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+DEBUG 2025-07-13 13:21:56,974 middleware 15496 4092 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:21:56,974 middleware 15496 4092 MCP Middleware: Request path: /admin/jsi18n/
+DEBUG 2025-07-13 13:21:56,974 middleware 15496 4092 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:21:56,976 basehttp 15496 8164 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,978 basehttp 15496 8164 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,983 basehttp 15496 8164 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,984 basehttp 15496 8164 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,986 basehttp 15496 8164 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,989 basehttp 15496 8164 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,989 basehttp 15496 4092 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 13:21:56,992 basehttp 15496 8164 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,993 basehttp 15496 4092 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,994 basehttp 15496 8164 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,994 basehttp 15496 4092 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:56,998 basehttp 15496 8164 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:57,000 basehttp 15496 8164 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:21:57,002 basehttp 15496 8164 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 304 0
+DEBUG 2025-07-13 13:22:06,022 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:06,022 middleware 15496 8164 MCP Middleware: Request path: /admin/auth/user/add/
+DEBUG 2025-07-13 13:22:06,022 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:06,899 models 15496 8164 Creating new user profile for user: ayush
+INFO 2025-07-13 13:22:06,901 models 15496 8164 Created user profile for new user: ayush
+INFO 2025-07-13 13:22:06,901 models 15496 8164 Updating user profile for user: ayush
+DEBUG 2025-07-13 13:22:06,902 models 15496 8164 Saved user profile for user: ayush
+INFO 2025-07-13 13:22:06,904 basehttp 15496 8164 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+DEBUG 2025-07-13 13:22:06,914 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:06,915 middleware 15496 8164 MCP Middleware: Request path: /admin/auth/user/2/change/
+DEBUG 2025-07-13 13:22:06,915 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:07,051 basehttp 15496 8164 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 32074
+DEBUG 2025-07-13 13:22:07,055 middleware 15496 8164 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:07,055 middleware 15496 8164 MCP Middleware: Request path: /admin/jsi18n/
+DEBUG 2025-07-13 13:22:07,055 middleware 15496 8164 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:07,080 basehttp 15496 9708 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,080 basehttp 15496 16404 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,080 basehttp 15496 12620 "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,080 basehttp 15496 8056 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,080 basehttp 15496 8164 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-13 13:22:07,276 basehttp 15496 4092 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2025-07-13 13:22:07,289 basehttp 15496 4092 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,313 basehttp 15496 4092 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,314 basehttp 15496 8056 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,315 basehttp 15496 8164 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-07-13 13:22:07,315 basehttp 15496 12620 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+DEBUG 2025-07-13 13:22:15,719 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:15,719 middleware 15496 17044 MCP Middleware: Request path: /api/auth/login/
+DEBUG 2025-07-13 13:22:15,719 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:16,644 serializers 15496 17044 User ayush logged in successfully
+INFO 2025-07-13 13:22:16,644 views 15496 17044 Login successful for user: ayush
+INFO 2025-07-13 13:22:16,645 basehttp 15496 17044 "POST /api/auth/login/ HTTP/1.1" 200 702
+INFO 2025-07-13 13:22:16,703 basehttp 15496 17044 "OPTIONS /api/files/list/?path= HTTP/1.1" 200 0
+INFO 2025-07-13 13:22:16,704 basehttp 15496 17044 "OPTIONS /api/files/list/?path= HTTP/1.1" 200 0
+INFO 2025-07-13 13:22:16,707 basehttp 15496 17044 "OPTIONS /api/files/list/?path= HTTP/1.1" 200 0
+INFO 2025-07-13 13:22:16,709 basehttp 15496 17044 "OPTIONS /api/files/list/?path= HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:22:16,709 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:16,712 middleware 15496 17044 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 13:22:16,712 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:16,719 views 15496 17044 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 13:22:16,720 basehttp 15496 17044 "GET /api/files/list/?path= HTTP/1.1" 200 38
+DEBUG 2025-07-13 13:22:16,721 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:16,723 middleware 15496 17044 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 13:22:16,723 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:16,730 views 15496 17044 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 13:22:16,731 basehttp 15496 17044 "GET /api/files/list/?path= HTTP/1.1" 200 38
+DEBUG 2025-07-13 13:22:16,732 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:16,733 middleware 15496 17044 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 13:22:16,733 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:16,737 views 15496 17044 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 13:22:16,737 basehttp 15496 17044 "GET /api/files/list/?path= HTTP/1.1" 200 38
+DEBUG 2025-07-13 13:22:16,737 middleware 15496 17044 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:22:16,737 middleware 15496 17044 MCP Middleware: Request path: /api/files/list/
+DEBUG 2025-07-13 13:22:16,737 middleware 15496 17044 MCP Middleware: Not an MCP API endpoint, skipping authentication
+INFO 2025-07-13 13:22:16,751 views 15496 17044 Directory listed for user ayush: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 13:22:16,754 basehttp 15496 17044 "GET /api/files/list/?path= HTTP/1.1" 200 38
+INFO 2025-07-13 13:23:48,772 basehttp 15496 17784 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:23:48,772 middleware 15496 17784 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:23:48,772 middleware 15496 17784 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:23:48,772 middleware 15496 17784 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 13:23:48,772 middleware 15496 17784 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:23:48,772 middleware 15496 17784 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 13:23:48,772 views 15496 17784 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 13:23:48,772 views 15496 17784 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 13:23:48,772 views 15496 17784 MCP API: Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 13:23:48,772 utils 15496 17784 Executing Python code for user_dir: test_user
+DEBUG 2025-07-13 13:23:48,772 utils 15496 17784 Code length: 129 characters
+ERROR 2025-07-13 13:23:48,772 utils 15496 17784 User directory does not exist: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\test_user
+INFO 2025-07-13 13:23:48,778 basehttp 15496 17784 "POST /mcp_api/run_python_code HTTP/1.1" 200 108
+INFO 2025-07-13 13:24:01,041 basehttp 15496 17784 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:24:01,049 middleware 15496 17784 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:24:01,049 middleware 15496 17784 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:01,049 middleware 15496 17784 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 13:24:01,049 middleware 15496 17784 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:01,049 middleware 15496 17784 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 13:24:01,049 views 15496 17784 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 13:24:01,049 views 15496 17784 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 13:24:01,049 views 15496 17784 MCP API: Executing Python code for user_dir: ayush
+DEBUG 2025-07-13 13:24:01,049 utils 15496 17784 Executing Python code for user_dir: ayush
+DEBUG 2025-07-13 13:24:01,049 utils 15496 17784 Code length: 129 characters
+ERROR 2025-07-13 13:24:01,049 utils 15496 17784 User directory does not exist: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\ayush
+INFO 2025-07-13 13:24:01,049 basehttp 15496 17784 "POST /mcp_api/run_python_code HTTP/1.1" 200 104
+INFO 2025-07-13 13:24:06,302 basehttp 15496 17784 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:24:06,302 middleware 15496 17784 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:24:06,302 middleware 15496 17784 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:06,302 middleware 15496 17784 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 13:24:06,302 middleware 15496 17784 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:06,302 middleware 15496 17784 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 13:24:06,302 views 15496 17784 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 13:24:06,302 views 15496 17784 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 13:24:06,302 views 15496 17784 MCP API: Executing Python code for user_dir: user_ayush
+DEBUG 2025-07-13 13:24:06,302 utils 15496 17784 Executing Python code for user_dir: user_ayush
+DEBUG 2025-07-13 13:24:06,302 utils 15496 17784 Code length: 129 characters
+ERROR 2025-07-13 13:24:06,302 utils 15496 17784 User directory does not exist: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush
+INFO 2025-07-13 13:24:06,308 basehttp 15496 17784 "POST /mcp_api/run_python_code HTTP/1.1" 200 109
+INFO 2025-07-13 13:24:34,042 basehttp 15496 17784 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:24:34,042 middleware 15496 17784 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:24:34,042 middleware 15496 17784 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:34,042 middleware 15496 17784 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 13:24:34,042 middleware 15496 17784 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:34,042 middleware 15496 17784 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 13:24:34,042 views 15496 17784 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 13:24:34,042 views 15496 17784 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 13:24:34,042 views 15496 17784 MCP API: Executing Python code for user_dir: user_ayush2
+DEBUG 2025-07-13 13:24:34,042 utils 15496 17784 Executing Python code for user_dir: user_ayush2
+DEBUG 2025-07-13 13:24:34,042 utils 15496 17784 Code length: 129 characters
+ERROR 2025-07-13 13:24:34,042 utils 15496 17784 User directory does not exist: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush2
+INFO 2025-07-13 13:24:34,042 basehttp 15496 17784 "POST /mcp_api/run_python_code HTTP/1.1" 200 110
+INFO 2025-07-13 13:24:48,963 basehttp 15496 17784 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 13:24:48,963 middleware 15496 17784 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 13:24:48,963 middleware 15496 17784 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:48,963 middleware 15496 17784 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 13:24:48,963 middleware 15496 17784 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 13:24:48,963 middleware 15496 17784 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 13:24:48,963 views 15496 17784 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 13:24:48,963 views 15496 17784 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 13:24:48,963 views 15496 17784 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 13:24:48,963 utils 15496 17784 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 13:24:48,963 utils 15496 17784 Code length: 129 characters
+DEBUG 2025-07-13 13:24:48,963 utils 15496 17784 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpxkjf_7k2.py
+DEBUG 2025-07-13 13:24:48,963 utils 15496 17784 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpxkjf_7k2.py
+DEBUG 2025-07-13 13:24:48,970 utils 15496 17784 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 13:24:49,055 utils 15496 17784 Script execution completed with return code: 0
+DEBUG 2025-07-13 13:24:49,055 utils 15496 17784 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpxkjf_7k2.py
+INFO 2025-07-13 13:24:49,055 basehttp 15496 17784 "POST /mcp_api/run_python_code HTTP/1.1" 200 249
+INFO 2025-07-13 13:39:23,405 autoreload 15496 8264 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\mcp_api\utils.py changed, reloading.
+INFO 2025-07-13 13:39:24,027 autoreload 8616 16268 Watching for file changes with StatReloader
+INFO 2025-07-13 14:06:48,369 basehttp 8616 11424 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:06:48,386 middleware 8616 11424 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:06:48,386 middleware 8616 11424 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:06:48,386 middleware 8616 11424 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:06:48,386 middleware 8616 11424 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:06:48,386 middleware 8616 11424 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:06:48,392 views 8616 11424 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:06:48,392 views 8616 11424 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:06:48,392 views 8616 11424 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 Code length: 129 characters
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 USE_DOCKER_SANDBOX: False
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpwwfl47hy.py
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 Running script: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpwwfl47hy.py
+DEBUG 2025-07-13 14:06:48,396 utils 8616 11424 Working directory: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2
+INFO 2025-07-13 14:06:48,525 utils 8616 11424 Script execution completed with return code: 0
+DEBUG 2025-07-13 14:06:48,536 utils 8616 11424 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpwwfl47hy.py
+INFO 2025-07-13 14:06:48,536 basehttp 8616 11424 "POST /mcp_api/run_python_code HTTP/1.1" 200 249
+INFO 2025-07-13 14:07:10,799 autoreload 8616 16268 C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\mcp_api\utils.py changed, reloading.
+INFO 2025-07-13 14:07:11,833 autoreload 18296 10020 Watching for file changes with StatReloader
+INFO 2025-07-13 14:07:13,584 basehttp 18296 20568 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:07:13,595 middleware 18296 20568 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:07:13,595 middleware 18296 20568 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:07:13,595 middleware 18296 20568 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:07:13,595 middleware 18296 20568 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:07:13,599 middleware 18296 20568 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:07:13,599 views 18296 20568 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:07:13,600 views 18296 20568 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:07:13,600 views 18296 20568 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:07:13,600 utils 18296 20568 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:07:13,601 utils 18296 20568 Code length: 129 characters
+DEBUG 2025-07-13 14:07:13,601 utils 18296 20568 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:07:13,603 utils 18296 20568 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmppwcyoc79.py
+DEBUG 2025-07-13 14:07:13,603 utils 18296 20568 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmppwcyoc79.py
+INFO 2025-07-13 14:07:14,392 utils 18296 20568 Docker script execution completed with return code: 0
+DEBUG 2025-07-13 14:07:14,395 utils 18296 20568 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmppwcyoc79.py
+INFO 2025-07-13 14:07:14,396 basehttp 18296 20568 "POST /mcp_api/run_python_code HTTP/1.1" 200 159
+INFO 2025-07-13 14:07:32,756 basehttp 18296 20568 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:07:32,757 middleware 18296 20568 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:07:32,757 middleware 18296 20568 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:07:32,757 middleware 18296 20568 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:07:32,757 middleware 18296 20568 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:07:32,757 middleware 18296 20568 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:07:32,757 views 18296 20568 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:07:32,757 views 18296 20568 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:07:32,760 views 18296 20568 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:07:32,761 utils 18296 20568 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:07:32,762 utils 18296 20568 Code length: 129 characters
+DEBUG 2025-07-13 14:07:32,762 utils 18296 20568 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:07:32,762 utils 18296 20568 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp2csx50q6.py
+DEBUG 2025-07-13 14:07:32,762 utils 18296 20568 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmp2csx50q6.py
+INFO 2025-07-13 14:07:33,383 utils 18296 20568 Docker script execution completed with return code: 0
+DEBUG 2025-07-13 14:07:33,387 utils 18296 20568 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp2csx50q6.py
+INFO 2025-07-13 14:07:33,388 basehttp 18296 20568 "POST /mcp_api/run_python_code HTTP/1.1" 200 159
+INFO 2025-07-13 14:09:48,698 basehttp 18296 20568 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:09:48,700 middleware 18296 20568 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:09:48,700 middleware 18296 20568 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:09:48,700 middleware 18296 20568 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:09:48,700 middleware 18296 20568 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:09:48,703 middleware 18296 20568 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:09:48,703 views 18296 20568 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:09:48,703 views 18296 20568 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:09:48,703 views 18296 20568 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:09:48,703 utils 18296 20568 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:09:48,707 utils 18296 20568 Code length: 13 characters
+DEBUG 2025-07-13 14:09:48,707 utils 18296 20568 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:09:48,708 utils 18296 20568 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpr248mv1d.py
+DEBUG 2025-07-13 14:09:48,708 utils 18296 20568 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmpr248mv1d.py
+INFO 2025-07-13 14:09:49,179 utils 18296 20568 Docker script execution completed with return code: 1
+DEBUG 2025-07-13 14:09:49,183 utils 18296 20568 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpr248mv1d.py
+INFO 2025-07-13 14:09:49,183 basehttp 18296 20568 "POST /mcp_api/run_python_code HTTP/1.1" 200 229
+INFO 2025-07-13 14:10:11,298 basehttp 18296 20568 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:10:11,299 middleware 18296 20568 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:10:11,299 middleware 18296 20568 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:10:11,299 middleware 18296 20568 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:10:11,299 middleware 18296 20568 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:10:11,299 middleware 18296 20568 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:10:11,299 views 18296 20568 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:10:11,302 views 18296 20568 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:10:11,302 views 18296 20568 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:10:11,302 utils 18296 20568 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:10:11,303 utils 18296 20568 Code length: 32 characters
+DEBUG 2025-07-13 14:10:11,303 utils 18296 20568 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:10:11,305 utils 18296 20568 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpzz7txqj0.py
+DEBUG 2025-07-13 14:10:11,305 utils 18296 20568 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmpzz7txqj0.py
+INFO 2025-07-13 14:10:12,010 utils 18296 20568 Docker script execution completed with return code: 1
+DEBUG 2025-07-13 14:10:12,012 utils 18296 20568 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmpzz7txqj0.py
+INFO 2025-07-13 14:10:12,013 basehttp 18296 20568 "POST /mcp_api/run_python_code HTTP/1.1" 200 850
+INFO 2025-07-13 14:15:42,939 basehttp 18296 21336 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:15:42,944 middleware 18296 21336 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:15:42,944 middleware 18296 21336 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:15:42,944 middleware 18296 21336 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:15:42,944 middleware 18296 21336 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:15:42,946 middleware 18296 21336 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:15:42,946 views 18296 21336 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:15:42,947 views 18296 21336 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:15:42,947 views 18296 21336 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:15:42,947 utils 18296 21336 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:15:42,947 utils 18296 21336 Code length: 23 characters
+DEBUG 2025-07-13 14:15:42,947 utils 18296 21336 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:15:42,948 utils 18296 21336 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp3mvpwzl5.py
+DEBUG 2025-07-13 14:15:42,948 utils 18296 21336 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmp3mvpwzl5.py
+INFO 2025-07-13 14:15:44,524 utils 18296 21336 Docker script execution completed with return code: 0
+DEBUG 2025-07-13 14:15:44,526 utils 18296 21336 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp3mvpwzl5.py
+INFO 2025-07-13 14:15:44,527 basehttp 18296 21336 "POST /mcp_api/run_python_code HTTP/1.1" 200 69
+INFO 2025-07-13 14:17:03,562 basehttp 18296 1764 "OPTIONS /mcp_api/run_python_code HTTP/1.1" 200 0
+DEBUG 2025-07-13 14:17:03,562 middleware 18296 1764 MCP Middleware: Processing request from 127.0.0.1
+DEBUG 2025-07-13 14:17:03,562 middleware 18296 1764 MCP Middleware: Request path: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:17:03,562 middleware 18296 1764 MCP Middleware: Got IP from REMOTE_ADDR: 127.0.0.1
+INFO 2025-07-13 14:17:03,562 middleware 18296 1764 MCP API request from IP: 127.0.0.1 to endpoint: /mcp_api/run_python_code
+DEBUG 2025-07-13 14:17:03,562 middleware 18296 1764 MCP Middleware: IP 127.0.0.1 authenticated successfully
+DEBUG 2025-07-13 14:17:03,568 views 18296 1764 MCP API: run_python_code request received from 127.0.0.1
+DEBUG 2025-07-13 14:17:03,568 views 18296 1764 MCP API: run_python_code payload keys: ['user_dir', 'python_code']
+INFO 2025-07-13 14:17:03,569 views 18296 1764 MCP API: Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:17:03,569 utils 18296 1764 Executing Python code for user_dir: user_ayush_2
+DEBUG 2025-07-13 14:17:03,569 utils 18296 1764 Code length: 427 characters
+DEBUG 2025-07-13 14:17:03,569 utils 18296 1764 USE_DOCKER_SANDBOX: True
+DEBUG 2025-07-13 14:17:03,570 utils 18296 1764 Created temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp2otea1iw.py
+DEBUG 2025-07-13 14:17:03,570 utils 18296 1764 Running Docker command: docker run --rm --network=none --memory=128m --cpus=0.5 -v C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2:/sandbox -w /sandbox mcp-python-sandbox python tmp2otea1iw.py
+INFO 2025-07-13 14:17:04,078 utils 18296 1764 Docker script execution completed with return code: 0
+DEBUG 2025-07-13 14:17:04,080 utils 18296 1764 Cleaned up temporary file: C:\Users\purus\Desktop\V04_2_minimal\FILE_MANAGER\BACKEND\project\master_dir\user_ayush_2\tmp2otea1iw.py
+INFO 2025-07-13 14:17:04,080 basehttp 18296 1764 "POST /mcp_api/run_python_code HTTP/1.1" 200 1441

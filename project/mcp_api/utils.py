@@ -16,15 +16,18 @@ import contextlib
 
 logger = logging.getLogger(settings.MCP_LOGGER)
 
+# Switch to control sandboxing method
+USE_DOCKER_SANDBOX = True  # Set to True to use Docker-based sandboxing
+
 
 def execute_python_code(user_dir: str, python_code: str) -> Dict[str, Any]:
     """
     Execute Python code in the user's directory.
-    
+    If USE_DOCKER_SANDBOX is True, runs code in a Docker container.
+    Otherwise, runs code normally as before.
     Args:
         user_dir (str): The user's directory name in master_dir
         python_code (str): The Python code to execute
-        
     Returns:
         Dict[str, Any]: Dictionary containing execution results
     """
@@ -32,7 +35,8 @@ def execute_python_code(user_dir: str, python_code: str) -> Dict[str, Any]:
     if settings.DEBUG:
         logger.debug(f"Executing Python code for user_dir: {user_dir}")
         logger.debug(f"Code length: {len(python_code)} characters")
-    
+        logger.debug(f"USE_DOCKER_SANDBOX: {USE_DOCKER_SANDBOX}")
+
     # Validate user directory
     user_path = Path(settings.MASTER_DIR) / user_dir
     if not user_path.exists():
@@ -43,20 +47,23 @@ def execute_python_code(user_dir: str, python_code: str) -> Dict[str, Any]:
             'output': '',
             'error_output': ''
         }
-    
+
     # Create a temporary file for the code
     try:
         with tempfile.NamedTemporaryFile(mode='w', suffix='.py', delete=False, dir=user_path) as temp_file:
             temp_file.write(python_code)
             temp_file_path = temp_file.name
-        
+
         # Debug logging
         if settings.DEBUG:
             logger.debug(f"Created temporary file: {temp_file_path}")
-        
-        # Execute the code
-        result = _run_python_script(temp_file_path, user_path)
-        
+
+        # Choose execution method
+        if USE_DOCKER_SANDBOX:
+            result = _run_python_script_docker(temp_file_path, user_path)
+        else:
+            result = _run_python_script(temp_file_path, user_path)
+
         # Clean up temporary file
         try:
             os.unlink(temp_file_path)
@@ -64,9 +71,9 @@ def execute_python_code(user_dir: str, python_code: str) -> Dict[str, Any]:
                 logger.debug(f"Cleaned up temporary file: {temp_file_path}")
         except OSError as e:
             logger.warning(f"Failed to clean up temporary file {temp_file_path}: {e}")
-        
+
         return result
-        
+
     except Exception as e:
         logger.error(f"Error executing Python code: {e}")
         return {
@@ -127,6 +134,66 @@ def _run_python_script(script_path: str, working_dir: Path) -> Dict[str, Any]:
         return {
             'success': False,
             'error': f'Failed to run script: {str(e)}',
+            'output': '',
+            'error_output': str(e)
+        }
+
+
+def _run_python_script_docker(script_path: str, working_dir: Path) -> Dict[str, Any]:
+    """
+    Run a Python script in a Docker container with the user's directory as the root.
+    Args:
+        script_path (str): Path to the Python script
+        working_dir (Path): Working directory for execution (user's dir)
+    Returns:
+        Dict[str, Any]: Execution results
+    """
+    # Docker image name (should be built already)
+    docker_image = "mcp-python-sandbox"
+    # Only allow access to the user's directory
+    container_workdir = "/sandbox"
+    script_name = os.path.basename(script_path)
+    # Build docker run command
+    command = [
+        "docker", "run", "--rm",
+        "--network=none",  # No network access
+        "--memory=128m",   # Memory limit
+        "--cpus=0.5",      # CPU limit
+        "-v", f"{str(working_dir)}:{container_workdir}",
+        "-w", container_workdir,
+        docker_image,
+        "python", script_name
+    ]
+    # Debug logging
+    if settings.DEBUG:
+        logger.debug(f"Running Docker command: {' '.join(command)}")
+    try:
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            timeout=30  # 30 second timeout
+        )
+        logger.info(f"Docker script execution completed with return code: {result.returncode}")
+        return {
+            'success': result.returncode == 0,
+            'output': result.stdout,
+            'error_output': result.stderr,
+            'return_code': result.returncode
+        }
+    except subprocess.TimeoutExpired:
+        logger.warning(f"Docker script execution timed out: {script_path}")
+        return {
+            'success': False,
+            'error': 'Docker script execution timed out (30 seconds)',
+            'output': '',
+            'error_output': 'Execution timeout'
+        }
+    except Exception as e:
+        logger.error(f"Error running Docker script {script_path}: {e}")
+        return {
+            'success': False,
+            'error': f'Failed to run Docker script: {str(e)}',
             'output': '',
             'error_output': str(e)
         }
