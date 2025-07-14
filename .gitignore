@@ -12,5 +12,7 @@ db.sqlite3
 .env
 
 #logging
+logs/
 logs/django.log
+*/django.log
 project/master_dir/

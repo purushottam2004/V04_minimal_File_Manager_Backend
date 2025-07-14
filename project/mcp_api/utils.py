@@ -32,6 +32,8 @@ def execute_python_code(user_dir: str, python_code: str) -> Dict[str, Any]:
         Dict[str, Any]: Dictionary containing execution results
     """
     # Debug logging
+    # return python_code
+    # print(python_code)
     if settings.DEBUG:
         logger.debug(f"Executing Python code for user_dir: {user_dir}")
         logger.debug(f"Code length: {len(python_code)} characters")

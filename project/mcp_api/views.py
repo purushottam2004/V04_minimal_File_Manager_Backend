@@ -104,6 +104,7 @@ def run_python_code_view(request) -> JsonResponse:
 @csrf_exempt
 @require_http_methods(["POST"])
 def list_dir_view(request) -> JsonResponse:
+    # return JsonResponse(data= {"asd" : "asd"}, status=200)
     """
     List contents of a directory for a specific user.
     
